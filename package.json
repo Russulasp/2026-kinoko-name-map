@@ -4,6 +4,12 @@
   "private": true,
   "scripts": {
     "start": "python3 -m http.server 8000",
-    "test": "node scripts/check-slides.mjs"
+    "test": "node scripts/check-slides.mjs",
+    "export:pptx": "node scripts/export-slides.mjs pptx",
+    "export:pdf": "node scripts/export-slides.mjs pdf"
+  },
+  "devDependencies": {
+    "playwright": "^1.54.0",
+    "pptxgenjs": "^4.0.1"
   }
 }

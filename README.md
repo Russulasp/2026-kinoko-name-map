@@ -24,3 +24,49 @@ npm start
 ```bash
 npm test
 ```
+
+## PowerPoint / PDF の生成
+
+Reveal.js を唯一のプレゼンテーション本体として、Playwright の Chromium で各スライドを 1600 × 900 px にレンダリングします。PowerPoint は各キャプチャ画像を16:9のページ全面に配置するため、テキストは編集できませんが、HTML/CSS版の見た目を保てます。fragment はすべて表示した最終状態で出力され、処理に使ったPNGはOSの一時ディレクトリから終了時に削除されます。
+
+### 必要な依存パッケージ
+
+- Node.js（推奨: 現行LTS版）と npm
+- `playwright`（Chromiumによるレンダリング、画像取得、PDF生成）
+- `pptxgenjs`（画像からPowerPointファイルを生成）
+
+依存関係は `package.json` に定義されています。
+
+### Windowsでの初回セットアップ
+
+PowerShellまたはコマンドプロンプトでリポジトリのルートへ移動し、次を実行します。
+
+```powershell
+npm install
+npx playwright install chromium
+```
+
+Reveal.js、Font AwesomeなどのCDNリソースとWebフォントを読み込むため、エクスポート時にもインターネット接続が必要です。Playwrightはフォントの読み込み完了を待ってからキャプチャします。日本語が正しく表示されない場合は、元のプレゼンテーションが想定する日本語フォントをWindowsへインストールしてください。
+
+### PPTX生成コマンド
+
+```bash
+npm run export:pptx
+```
+
+16:9の `dist/kinoko-name-map.pptx` が生成されます。
+
+### PDF生成コマンド
+
+```bash
+npm run export:pdf
+```
+
+16:9の `dist/kinoko-name-map.pdf` が生成されます。こちらも同じPNGキャプチャをChromiumでPDF化するため、PPTXとページ順・表示状態が一致します。
+
+### 追加・変更したエクスポート関連ファイル
+
+- `scripts/export-slides.mjs` — ローカル配信、全スライドのキャプチャ、PPTX/PDF生成、一時ファイル削除
+- `package.json` — エクスポートコマンドと必要な依存関係
+- `.gitignore` — 依存パッケージと生成物をGit管理から除外
+- `README.md` — セットアップおよび生成手順（本節）
