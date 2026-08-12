@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "python3 -m http.server 8000",
+    "start": "node scripts/serve.mjs",
     "test": "node scripts/check-slides.mjs",
     "export:pptx": "node scripts/export-slides.mjs pptx",
     "export:pdf": "node scripts/export-slides.mjs pdf"
