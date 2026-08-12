@@ -4,7 +4,7 @@ Reveal.js で作成した、16:9のプレゼンテーションです。
 
 ## 表示方法
 
-Python 3 がある環境では、リポジトリのルートで次を実行します。
+Node.js（推奨: 現行LTS版）がある環境では、リポジトリのルートで次を実行します。表示だけなら依存パッケージのインストールは不要です。
 
 ```bash
 npm start
@@ -18,6 +18,7 @@ npm start
 - `css/theme.css` — 16:9のテーマ、レイアウト、配色
 - `js/presentation.js` — Reveal.js の初期化設定
 - `scripts/check-slides.mjs` — スライド構造の簡易チェック
+- `scripts/serve.mjs` — Windows/macOS/Linux 共通のローカル表示サーバー
 
 ## チェック
 
@@ -39,7 +40,7 @@ Reveal.js を唯一のプレゼンテーション本体として、Playwright �
 
 ### Windowsでの初回セットアップ
 
-PowerShellまたはコマンドプロンプトでリポジトリのルートへ移動し、次を実行します。
+PowerShellまたはコマンドプロンプトでリポジトリのルートへ移動し、次を実行します。表示だけなら、このインストール手順を省略して `npm start` を実行できます。
 
 ```powershell
 npm install

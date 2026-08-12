@@ -1,45 +1,19 @@
-import { createServer } from 'node:http';
 import { mkdtemp, mkdir, readFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
-import { extname, join, normalize, resolve } from 'node:path';
+import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 import { chromium } from 'playwright';
+import { startStaticServer } from './static-server.mjs';
 
 const WIDTH = 1600;
 const HEIGHT = 900;
-const root = resolve(import.meta.dirname, '..');
+const root = fileURLToPath(new URL('..', import.meta.url));
 const format = process.argv[2];
 
 if (!['pptx', 'pdf'].includes(format)) {
   console.error('Usage: node scripts/export-slides.mjs <pptx|pdf>');
   process.exit(1);
-}
-
-const contentTypes = {
-  '.css': 'text/css; charset=utf-8',
-  '.html': 'text/html; charset=utf-8',
-  '.js': 'text/javascript; charset=utf-8',
-};
-
-function startServer() {
-  const server = createServer(async (request, response) => {
-    try {
-      const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
-      const relativePath = pathname === '/' ? 'index.html' : pathname.slice(1);
-      const file = resolve(root, normalize(relativePath));
-      if (file !== root && !file.startsWith(`${root}/`)) throw new Error('Invalid path');
-      const body = await readFile(file);
-      response.writeHead(200, { 'Content-Type': contentTypes[extname(file)] ?? 'application/octet-stream' });
-      response.end(body);
-    } catch {
-      response.writeHead(404).end('Not found');
-    }
-  });
-
-  return new Promise((resolveServer, reject) => {
-    server.once('error', reject);
-    server.listen(0, '127.0.0.1', () => resolveServer(server));
-  });
 }
 
 async function captureSlides(page, directory) {
@@ -104,7 +78,7 @@ let server;
 let browser;
 try {
   await mkdir(join(root, 'dist'), { recursive: true });
-  server = await startServer();
+  server = await startStaticServer(root);
   const address = server.address();
   browser = await chromium.launch({ headless: true });
   const page = await browser.newPage({ viewport: { width: WIDTH, height: HEIGHT }, deviceScaleFactor: 1 });
