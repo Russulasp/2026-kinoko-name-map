@@ -70,3 +70,21 @@ body { background:var(--paper); }
 
 /* CASE 06 — distinguish re-identification of Japanese specimens from true European T. ustale. */
 .kakishimeji{padding-top:54px!important}.kakishimeji h2{font-size:52px;margin-bottom:18px}.kakishimeji-flow{grid-template-columns:1fr 30px 1fr 30px .72fr;gap:9px;margin:0 0 13px}.kakishimeji-flow>div{padding:12px 14px;font-size:18px;min-height:78px}.kakishimeji-flow>i{font-size:20px}.kakishimeji-flow b,.kakishimeji-flow span{display:block}.kakishimeji-flow span{font-size:15px;line-height:1.35;margin-top:4px}.kakishimeji-flow small{font-size:12px;margin:0 0 2px;color:var(--green);font-weight:700}.kakishimeji-result{display:grid;grid-template-columns:3.3fr 1.05fr;gap:14px}.species-result{background:white;border:1px solid var(--line);padding:10px 12px}.species-result span{display:grid;grid-template-columns:1fr auto;align-items:center;gap:2px 8px;padding:5px 12px;text-align:left}.species-result span:nth-child(even){border-left:1px solid var(--line)}.species-result b{font-size:15px;line-height:1.25}.species-result em{font-size:18px;text-align:right}.species-result mark{grid-column:2;font-size:11px;justify-self:end}.species-result small{grid-column:1/-1;font-size:11px;color:var(--muted)}.true-ustale{display:flex;flex-direction:column;justify-content:center;background:var(--soft);border:2px dashed var(--green);padding:10px 14px;text-align:center}.true-ustale small{font-size:12px;color:var(--muted)}.true-ustale em{font-size:20px;margin:3px 0}.true-ustale strong{font-size:14px}.true-ustale span{font-size:12px;color:var(--muted)}.research-link{display:grid;grid-template-columns:.75fr 32px 1fr 2.1fr;align-items:center;gap:8px;margin-top:13px}.research-link>div{background:white;border-top:5px solid var(--green);padding:8px 12px;text-align:center}.research-link>div small,.research-link>div b,.research-link>div span{display:block}.research-link>div small{font-size:11px;color:var(--muted)}.research-link>div b{font-size:16px}.research-link>div span{font-size:12px}.research-link>i{color:var(--green);text-align:center}.research-link>p{margin:0;background:var(--ink);color:white;padding:9px 13px;font-size:14px;line-height:1.4}.research-link>p strong{color:var(--lime)}.research-link>p small{font-size:12px;color:#d7e2dc}.kakishimeji .takeaway{font-size:18px;padding:10px 18px;margin:13px 0 0}
+
+/* Focused layouts for the revised, lower-density case summaries. */
+.cornea-update.simplified{grid-template-columns:1fr 42px 1fr 42px 1fr;margin-top:15px}
+.cornea-update.simplified article{min-height:310px}
+.cornea-update.simplified time{font-size:38px}
+.used-names{display:grid;grid-template-columns:1fr 60px 1.4fr;align-items:stretch;gap:18px;margin-top:24px}
+.used-names>div{background:white;border:1px solid var(--line);padding:28px 34px;text-align:center}
+.used-names>i{align-self:center;text-align:center;color:var(--green);font-size:30px}
+.used-names small{display:block;color:var(--muted);font-size:17px;margin-bottom:14px}
+.used-names p{font-size:24px;line-height:1.7;margin:0}
+.used-names h3{font-size:27px;line-height:1.4;margin:0 0 12px}
+.used-names .accent{background:var(--green);color:white}
+.used-names .accent small{color:#d7e2dc}
+.used-names .accent strong{color:var(--lime)}
+.kakishimeji.chemistry .research-link{grid-template-columns:1fr 50px 1.2fr;max-width:1050px;margin:45px auto 25px}
+.kakishimeji.chemistry .research-link>div{padding:25px}
+.kakishimeji.chemistry .research-link>p{grid-column:1/-1;font-size:21px;padding:25px 32px}
+.kakishimeji.chemistry .takeaway{font-size:24px;padding:20px}
