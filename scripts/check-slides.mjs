@@ -7,7 +7,7 @@ const titleSlide = html.match(/<section class="title-slide">([\s\S]*?)<\/section
 
 const assertions = [
   [html.includes('class="reveal"') && html.includes('class="slides"'), 'Reveal container is present'],
-  [(html.match(/<section/g) ?? []).length >= 25, 'Presentation contains at least 25 slides'],
+  [(html.match(/<section/g) ?? []).length === 28, 'Presentation contains exactly 28 slides'],
   [html.includes('Amanita satotamagotake') && html.includes('Lactifluus'), 'Key manuscript examples are present'],
   [html.includes('白水ほか（2018）の解析では') && html.includes('species complex') && html.includes('少なくとも一部の日本産では') && html.includes('適用が<strong>暫定的'), 'Auricularia findings and later uncertainty are appropriately scoped'],
   [html.includes('解析した日本産標本では確認されなかった') && html.includes('子実体で少ない／検出されない ≠ 生合成能力がない'), 'Tricholoma revision and ustalic acid findings are appropriately scoped'],
@@ -17,6 +17,8 @@ const assertions = [
   [titleSlide.includes('きのこの') && titleSlide.includes('2026年9月') && titleSlide.includes('渡邉 大輔') && !titleSlide.includes('subtitle'), 'Title slide contains only the requested presentation details'],
   [css.includes('aspect-ratio') || css.includes('1600'), '16:9 presentation styling is present'],
   [js.includes('Reveal.initialize') && js.includes('width: 1600') && js.includes('height: 900'), 'Reveal initializes at 16:9']
+  ,[js.includes('Reveal.getSlides()') && js.includes("padStart(2, '0')") && css.includes('attr(data-slide-number)'), 'Slide numbers are generated from Reveal order with two-digit padding']
+  ,[!css.includes('section::after{display:none}'), 'Slide numbers remain visible in print output']
 ];
 
 for (const [ok, message] of assertions) {
