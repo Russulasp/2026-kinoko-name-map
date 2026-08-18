@@ -88,3 +88,10 @@ body { background:var(--paper); }
 .kakishimeji.chemistry .research-link>div{padding:25px}
 .kakishimeji.chemistry .research-link>p{grid-column:1/-1;font-size:21px;padding:25px 32px}
 .kakishimeji.chemistry .takeaway{font-size:24px;padding:20px}
+
+/* Copy refinements requested for the name roles and dated-name summary. */
+.name-roles .role-grid{margin-top:34px}
+.context small{display:block;font-size:17px;margin-top:7px;color:var(--muted)}
+.dated-names span{display:grid;grid-template-columns:1.2fr 1fr;align-items:baseline;gap:12px;text-align:left}
+.dated-names small{margin:0;font-size:13px}
+.tamago-note{font-size:16px;margin-top:16px}
