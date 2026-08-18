@@ -1,3 +1,12 @@
+function updateSlideNumbers() {
+  Reveal.getSlides().forEach((slide, index) => {
+    slide.dataset.slideNumber = String(index).padStart(2, '0');
+  });
+}
+
+Reveal.on('ready', updateSlideNumbers);
+Reveal.on('slidechanged', updateSlideNumbers);
+
 Reveal.initialize({
   hash: true,
   history: true,
