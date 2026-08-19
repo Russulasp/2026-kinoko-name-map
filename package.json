@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node scripts/serve.mjs",
-    "test": "node scripts/check-slides.mjs",
+    "test": "node scripts/check-slides.mjs && node --test scripts/*.test.mjs",
     "export:pptx": "node scripts/export-slides.mjs pptx",
     "export:pdf": "node scripts/export-slides.mjs pdf"
   },
