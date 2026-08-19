@@ -19,7 +19,7 @@ body { background:var(--paper); }
 .reveal strong { color:var(--green); }
 .reveal em { font-family:Georgia,serif; }
 .case-label { display:inline-block; color:var(--muted); font-size:17px; font-weight:600; letter-spacing:.08em; margin-bottom:14px; }
-.refs { position:absolute; left:112px; right:120px; bottom:29px; color:#71807a; font-size:15px; line-height:1.35; }
+.refs { position:absolute; left:112px; right:120px; bottom:29px; color:#71807a; font-size:17px; line-height:1.35; }
 .lead-card { display:flex; align-items:center; gap:30px; background:var(--soft); border-left:7px solid var(--green); padding:24px 34px; margin:18px 0 28px; }
 .lead-card i { font-size:44px; color:var(--green); }.lead-card p{margin:0;font-size:31px}
 .takeaway { text-align:center; background:var(--ink); color:white; padding:18px 28px; border-radius:6px; margin:26px 0 0; }.takeaway strong,.takeaway em{color:var(--lime)}
@@ -32,10 +32,10 @@ body { background:var(--paper); }
 .taxonomy-flow { display:grid; grid-template-columns:1fr 80px 1.35fr; align-items:center; gap:15px; margin:15px 0 28px; }.taxonomy-flow>div{background:white;border:1px solid var(--line);padding:30px;text-align:center;font-size:28px;border-radius:8px}.taxonomy-flow>i{text-align:center;color:var(--green);font-size:42px}.taxonomy-flow small{display:block;color:var(--muted);font-size:17px;margin-top:12px}.split{display:grid;grid-template-columns:1fr 1fr;gap:15px}.split span+span{border-left:1px solid var(--line)}
 .compact article{padding:18px 28px}.compact ul{font-size:21px}.note{text-align:center;color:var(--muted);font-size:19px}
 .context { color:var(--muted); font-size:24px; border-left:5px solid var(--lime); padding-left:20px; margin:-15px 0 30px; }
-.tree-list>div:first-child{width:45%;margin:auto;text-align:center;background:var(--ink);color:white;padding:17px;border-radius:5px}.tree-list>div:first-child small{display:block;margin-top:5px}.children{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:55px;position:relative}.children::before{content:"";position:absolute;top:-28px;left:16%;right:16%;border-top:2px solid var(--green)}.children p{background:white;border:1px solid var(--line);padding:20px 12px;text-align:center;font-size:21px}.children b,.children em{display:block}.children b{color:var(--green);margin-bottom:8px}.children small{display:inline-block}mark{background:var(--lime);padding:3px 8px;border-radius:3px;font-size:15px}
+.tree-list>div:first-child{width:45%;margin:auto;text-align:center;background:var(--ink);color:white;padding:17px;border-radius:5px}.tree-list>div:first-child small{display:block;margin-top:5px}.children{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:55px;position:relative}.children::before{content:"";position:absolute;top:-28px;left:16%;right:16%;border-top:2px solid var(--green)}.children p{background:white;border:1px solid var(--line);padding:20px 12px;text-align:center;font-size:21px}.children b,.children em{display:block}.children b{color:var(--green);margin-bottom:8px}.children small{display:inline-block}mark{background:var(--lime);padding:3px 8px;border-radius:3px;font-size:17px}
 .update-list{margin:0;padding:0;counter-reset:item;list-style:none}.update-list li{background:white;border:1px solid var(--line);padding:18px 25px;margin:13px 0;font-size:22px}.update-list li::first-letter{color:var(--green)}.update-list i{color:var(--green);margin:0 10px}.muted{color:var(--muted)}
 .species-chips{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.species-chips span{background:white;border:1px solid var(--line);padding:22px 12px;text-align:center}.reveal hr{border:0;border-top:1px solid var(--line);margin:28px 0}.single-flow{display:flex;align-items:center;justify-content:center;gap:35px;font-size:29px}.single-flow i{color:var(--green)}
-.cornea-update{display:grid;grid-template-columns:1fr 42px 1fr 42px 1fr;align-items:stretch;gap:8px;margin-top:15px}.cornea-update article{background:white;border:1px solid var(--line);border-top:7px solid var(--green);padding:20px 17px 18px;text-align:center;min-height:310px}.cornea-update>i{align-self:center;text-align:center;color:var(--green);font-size:25px}.cornea-update time{display:block;color:var(--green);font-size:38px;font-weight:700;line-height:1}.cornea-update small{display:block;color:var(--muted);font-size:16px;margin:7px 0 19px}.cornea-update h3{font-size:26px;line-height:1.45;min-height:82px}.cornea-update p{font-size:17px;color:var(--muted);line-height:1.55;margin:18px 0 0}.cornea-update .provisional{background:var(--ink);border-color:var(--ink);border-top-color:var(--lime);color:white}.cornea-update .provisional time,.cornea-update .provisional strong{color:var(--lime)}.cornea-update .provisional h3{color:white}.cornea-update .provisional p,.cornea-update .provisional small{color:#d7e2dc}
+.cornea-update{display:grid;grid-template-columns:1fr 42px 1fr 42px 1fr;align-items:stretch;gap:8px;margin-top:15px}.cornea-update article{background:white;border:1px solid var(--line);border-top:7px solid var(--green);padding:20px 17px 18px;text-align:center;min-height:310px}.cornea-update>i{align-self:center;text-align:center;color:var(--green);font-size:25px}.cornea-update time{display:block;color:var(--green);font-size:38px;font-weight:700;line-height:1}.cornea-update small{display:block;color:var(--muted);font-size:17px;margin:7px 0 19px}.cornea-update h3{font-size:26px;line-height:1.45;min-height:82px}.cornea-update p{font-size:17px;color:var(--muted);line-height:1.55;margin:18px 0 0}.cornea-update .provisional{background:var(--ink);border-color:var(--ink);border-top-color:var(--lime);color:white}.cornea-update .provisional time,.cornea-update .provisional strong{color:var(--lime)}.cornea-update .provisional h3{color:white}.cornea-update .provisional p,.cornea-update .provisional small{color:#d7e2dc}
 .method-note{display:flex;align-items:center;gap:30px;margin-top:40px;background:var(--soft);padding:25px 35px}.method-note>i{font-size:55px;color:var(--green)}.method-note p{margin:0;font-size:24px}
 .quad{display:grid;grid-template-columns:1fr 1fr!important;gap:12px}.quad span{font-size:22px;padding:7px}
 .genus-grid article{padding:25px}.genus-grid h3{color:var(--green)}.genus-grid h3 span{font-size:17px}.genus-grid ul{font-size:18px;padding-top:15px}.genus-grid small{font-size:17px}.story-list{display:grid;grid-template-columns:1fr 1fr;gap:13px 25px;list-style-position:inside}.story-list li{font-size:22px;background:white;border:1px solid var(--line);padding:15px 20px}.story-list li:last-child{grid-column:1/-1}.story-list li::marker{color:var(--green);font-weight:700}
@@ -44,28 +44,28 @@ body { background:var(--paper); }
 .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px}.hero-stats article{display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:280px;background:white;border-top:8px solid var(--green)}.hero-stats strong,.hero-stats>article>i{font-size:78px;color:var(--green)}.hero-stats span{font-size:28px;font-weight:700}.hero-stats small{font-size:18px;color:var(--muted);margin-top:20px}
 .boletaceae-review h2{margin-bottom:22px}.boletaceae-review .hero-stats{margin-top:0}.boletaceae-review .hero-stats article{min-height:260px;padding:22px;text-align:center}.boletaceae-review .hero-stats .small-genera{background:var(--soft)}.boletaceae-review .small-genera strong{display:flex;align-items:baseline;gap:7px}.boletaceae-review .small-genera strong span{font-size:28px}.boletaceae-review .small-genera b{color:var(--rust);font-size:46px;line-height:1.2}.boletaceae-review .takeaway{margin-top:22px;font-size:25px}.boletaceae-review .takeaway small{font-size:18px;color:#d7e2dc}
 .evolution{display:grid;grid-template-columns:1fr 55px 1fr 55px 1fr 55px 1.2fr;align-items:center;margin-top:90px}.evolution>span{background:white;border:1px solid var(--line);min-height:180px;display:flex;flex-direction:column;justify-content:center;align-items:center;font-size:27px;font-weight:700;text-align:center}.evolution>span i{font-size:42px;color:var(--green);margin-bottom:18px}.evolution>i{text-align:center;color:var(--green)}.evolution .accent{background:var(--green);color:white}.evolution .accent i{color:var(--lime)}
-.looking-back h2{margin-bottom:20px}.looking-back .evolution-label{text-align:center;color:var(--muted);font-size:20px;margin:0}.looking-back .evolution-label i{color:var(--green)}.looking-back .evolution{margin-top:18px}.looking-back .evolution>span{min-height:176px}.looking-back .evolution small{display:block;color:var(--muted);font-size:16px;font-weight:500;margin-top:8px}.looking-back .evolution .accent small{color:#d7e2dc}.looking-back .takeaway{font-size:24px;line-height:1.45;margin-top:24px;padding:15px 28px}
+.looking-back h2{margin-bottom:20px}.looking-back .evolution-label{text-align:center;color:var(--muted);font-size:20px;margin:0}.looking-back .evolution-label i{color:var(--green)}.looking-back .evolution{margin-top:18px}.looking-back .evolution>span{min-height:176px}.looking-back .evolution small{display:block;color:var(--muted);font-size:17px;font-weight:500;margin-top:8px}.looking-back .evolution .accent small{color:#d7e2dc}.looking-back .takeaway{font-size:24px;line-height:1.45;margin-top:24px;padding:15px 28px}
 .guidelines{display:grid;grid-template-columns:1fr 1fr;gap:14px 25px}.guidelines p{margin:0;background:white;border:1px solid var(--line);padding:18px;font-size:22px}.guidelines b{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:var(--green);color:white;border-radius:50%;margin-right:15px}
 .guideline-summary{margin:18px 0 0;padding:12px 20px;background:var(--soft);border-left:5px solid var(--green);font-size:19px}
 .name-roles h2{font-size:54px;margin-bottom:18px}
-.response-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:20px}.response-grid article{background:white;border:1px solid var(--line);border-top:5px solid var(--green);padding:24px 28px}.response-grid i{color:var(--green);font-size:32px}.response-grid h3{font-size:27px;margin:12px 0 10px}.response-grid ul{font-size:18px;margin-left:1.2em}.response-grid li{margin:.2em 0}.response-grid p{font-size:19px;line-height:1.45;margin:0}.response-grid .name-action{color:var(--green);font-weight:700;margin:9px 0 0}.response-grid small{display:block;color:var(--muted);font-size:15px;margin-top:10px}.calm-conclusion{background:var(--soft);border-left:6px solid var(--green);font-size:22px;line-height:1.55;margin:20px 0 0;padding:16px 24px}.name-response footer{position:absolute;bottom:55px;left:112px;right:112px;display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:18px;font-size:20px}.name-response footer strong{color:var(--green)}
+.response-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:20px}.response-grid article{background:white;border:1px solid var(--line);border-top:5px solid var(--green);padding:24px 28px}.response-grid i{color:var(--green);font-size:32px}.response-grid h3{font-size:27px;margin:12px 0 10px}.response-grid ul{font-size:18px;margin-left:1.2em}.response-grid li{margin:.2em 0}.response-grid p{font-size:19px;line-height:1.45;margin:0}.response-grid .name-action{color:var(--green);font-weight:700;margin:9px 0 0}.response-grid small{display:block;color:var(--muted);font-size:17px;margin-top:10px}.calm-conclusion{background:var(--soft);border-left:6px solid var(--green);font-size:22px;line-height:1.55;margin:20px 0 0;padding:16px 24px}.name-response footer{position:absolute;bottom:55px;left:112px;right:112px;display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:18px;font-size:20px}.name-response footer strong{color:var(--green)}
 .title-slide footer{position:absolute;bottom:85px;left:112px;right:112px;display:flex;justify-content:space-between;border-top:1px solid #50645b;padding-top:22px;font-size:22px}
 .title-slide{display:flex!important;flex-direction:column;justify-content:center;background:var(--ink)!important;color:white!important;padding-top:0!important}.title-slide::before{background:var(--lime)!important}.title-slide h1{color:white;margin:0 0 150px}
 .statement .case-label{color:#aebdb6}
-.references-slide h2{font-size:48px;margin-bottom:25px}.reference-columns{columns:2;column-gap:50px}.reference-columns p{break-inside:avoid;font-size:15px;line-height:1.45;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.references-slide h2{font-size:48px;margin-bottom:25px}.reference-columns{columns:2;column-gap:50px}.reference-columns p{break-inside:avoid;font-size:17px;line-height:1.45;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--line)}
 @media(max-width:900px){.reveal{font-size:28px}}
 @media print{.reveal .slides section{aspect-ratio:16/9}}
 
 /* CASE 04 — separate historical evidence from ecology. */
-.history-intro{font-size:18px;color:var(--muted);margin:15px 0 9px;border-left:4px solid var(--lime);padding-left:14px}.history-notes{display:grid;grid-template-columns:1fr 1fr 1.15fr;gap:16px;margin-top:0}.history-notes p{margin:0;background:white;border:1px solid var(--line);padding:10px 14px;font-size:14px;line-height:1.4}.history-notes time{display:block;color:var(--green);font-size:21px;font-weight:700}.history-notes time small{font-size:12px;margin-left:5px;color:var(--muted)}.history-notes .specimen{background:var(--soft);border-left:5px solid var(--green)}.history-notes .specimen>i{color:var(--green);margin-right:8px}.history-message{text-align:center;margin:10px 0 0;font-size:18px}.tamago-history h2,.tamago-ecology h2{margin-bottom:28px}
-.taxonomy-reason{display:grid;grid-template-columns:1fr 30px .8fr 30px 1.15fr;gap:10px;align-items:stretch;margin-top:20px}.taxonomy-reason p{display:flex;flex-direction:column;justify-content:center;text-align:center;background:var(--ink);color:white;margin:0;padding:12px 14px;font-size:16px;line-height:1.4;border-radius:5px}.taxonomy-reason strong{color:var(--lime)}.taxonomy-reason>i{align-self:center;text-align:center;color:var(--green);font-size:20px}
-.habitat-compare{display:grid;grid-template-columns:1fr .85fr 1fr;align-items:stretch;gap:20px}.habitat-compare article{background:white;border:1px solid var(--line);border-top:7px solid var(--green);padding:22px;text-align:center}.habitat-compare article>i{font-size:42px;color:var(--green)}.habitat-compare article small{display:block;color:var(--muted);font-size:16px;margin:10px 0}.habitat-compare h3{font-size:28px}.habitat-compare article p{font-size:20px;margin:10px 0 0}.habitat-compare .warm{border-top-color:var(--rust)}.habitat-compare .warm>i{color:var(--rust)}.range-axis{display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:12px;color:var(--muted);font-size:15px;text-align:center}.range-axis>i{color:var(--green);font-size:24px}.range-axis small{flex-basis:100%;font-size:14px}.overlap-note{display:flex;align-items:center;justify-content:center;gap:22px;background:var(--ink);color:white;margin-top:20px;padding:16px 24px}.overlap-note>i{font-size:38px;color:var(--lime)}.overlap-note p{font-size:21px;line-height:1.4;margin:0}.overlap-note strong{color:var(--lime)}.overlap-note small{color:#d7e2dc;font-size:15px}.compact-method{margin-top:16px;padding:14px 28px}.compact-method>i{font-size:40px}.compact-method p{font-size:19px}
+.history-intro{font-size:18px;color:var(--muted);margin:15px 0 9px;border-left:4px solid var(--lime);padding-left:14px}.history-notes{display:grid;grid-template-columns:1fr 1fr 1.15fr;gap:16px;margin-top:0}.history-notes p{margin:0;background:white;border:1px solid var(--line);padding:10px 14px;font-size:17px;line-height:1.4}.history-notes time{display:block;color:var(--green);font-size:21px;font-weight:700}.history-notes time small{font-size:17px;margin-left:5px;color:var(--muted)}.history-notes .specimen{background:var(--soft);border-left:5px solid var(--green)}.history-notes .specimen>i{color:var(--green);margin-right:8px}.history-message{text-align:center;margin:10px 0 0;font-size:18px}.tamago-history h2,.tamago-ecology h2{margin-bottom:28px}
+.taxonomy-reason{display:grid;grid-template-columns:1fr 30px .8fr 30px 1.15fr;gap:10px;align-items:stretch;margin-top:20px}.taxonomy-reason p{display:flex;flex-direction:column;justify-content:center;text-align:center;background:var(--ink);color:white;margin:0;padding:12px 14px;font-size:17px;line-height:1.4;border-radius:5px}.taxonomy-reason strong{color:var(--lime)}.taxonomy-reason>i{align-self:center;text-align:center;color:var(--green);font-size:20px}
+.habitat-compare{display:grid;grid-template-columns:1fr .85fr 1fr;align-items:stretch;gap:20px}.habitat-compare article{background:white;border:1px solid var(--line);border-top:7px solid var(--green);padding:22px;text-align:center}.habitat-compare article>i{font-size:42px;color:var(--green)}.habitat-compare article small{display:block;color:var(--muted);font-size:17px;margin:10px 0}.habitat-compare h3{font-size:28px}.habitat-compare article p{font-size:20px;margin:10px 0 0}.habitat-compare .warm{border-top-color:var(--rust)}.habitat-compare .warm>i{color:var(--rust)}.range-axis{display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:12px;color:var(--muted);font-size:17px;text-align:center}.range-axis>i{color:var(--green);font-size:24px}.range-axis small{flex-basis:100%;font-size:17px}.overlap-note{display:flex;align-items:center;justify-content:center;gap:22px;background:var(--ink);color:white;margin-top:20px;padding:16px 24px}.overlap-note>i{font-size:38px;color:var(--lime)}.overlap-note p{font-size:21px;line-height:1.4;margin:0}.overlap-note strong{color:var(--lime)}.overlap-note small{color:#d7e2dc;font-size:17px}.compact-method{margin-top:16px;padding:14px 28px}.compact-method>i{font-size:40px}.compact-method p{font-size:19px}
 
 /* CASE 05 — show the evidence chain without implying a worldwide two-species split. */
-.nigakuritake h2{margin-bottom:24px}.nigakuritake .taxonomy-flow{margin:0 0 18px}.nigakuritake .taxonomy-flow>div{padding:18px 24px;font-size:24px}.nigakuritake .taxonomy-flow small{margin-top:7px}.nigakuritake-evidence{display:grid;grid-template-columns:1fr 34px 1fr 34px 1.18fr;align-items:stretch;gap:10px}.nigakuritake-evidence article{display:flex;align-items:center;justify-content:center;gap:18px;background:white;border:1px solid var(--line);border-top:6px solid var(--green);padding:14px 16px;text-align:left}.nigakuritake-evidence article>i{color:var(--green);font-size:32px}.nigakuritake-evidence>i{align-self:center;text-align:center;color:var(--green);font-size:20px}.nigakuritake-evidence p{margin:0;font-size:21px;line-height:1.35}.nigakuritake-evidence small{display:block;color:var(--muted);font-size:15px;line-height:1.4;margin-top:4px}.overlap-caution{text-align:right;color:var(--muted);font-size:15px;margin:8px 0 12px}.nigakuritake .lead-card{padding:17px 28px;margin:0}.nigakuritake .lead-card i{font-size:36px}.nigakuritake .lead-card p{font-size:22px;line-height:1.5}
+.nigakuritake h2{margin-bottom:24px}.nigakuritake .taxonomy-flow{margin:0 0 18px}.nigakuritake .taxonomy-flow>div{padding:18px 24px;font-size:24px}.nigakuritake .taxonomy-flow small{margin-top:7px}.nigakuritake-evidence{display:grid;grid-template-columns:1fr 34px 1fr 34px 1.18fr;align-items:stretch;gap:10px}.nigakuritake-evidence article{display:flex;align-items:center;justify-content:center;gap:18px;background:white;border:1px solid var(--line);border-top:6px solid var(--green);padding:14px 16px;text-align:left}.nigakuritake-evidence article>i{color:var(--green);font-size:32px}.nigakuritake-evidence>i{align-self:center;text-align:center;color:var(--green);font-size:20px}.nigakuritake-evidence p{margin:0;font-size:21px;line-height:1.35}.nigakuritake-evidence small{display:block;color:var(--muted);font-size:17px;line-height:1.4;margin-top:4px}.overlap-caution{text-align:right;color:var(--muted);font-size:17px;margin:8px 0 12px}.nigakuritake .lead-card{padding:17px 28px;margin:0}.nigakuritake .lead-card i{font-size:36px}.nigakuritake .lead-card p{font-size:22px;line-height:1.5}
 
 /* CASE 06 — distinguish re-identification of Japanese specimens from true European T. ustale. */
-.kakishimeji{padding-top:54px!important}.kakishimeji h2{font-size:52px;margin-bottom:18px}.kakishimeji-flow{grid-template-columns:1fr 30px 1fr 30px .72fr;gap:9px;margin:0 0 13px}.kakishimeji-flow>div{padding:12px 14px;font-size:18px;min-height:78px}.kakishimeji-flow>i{font-size:20px}.kakishimeji-flow b,.kakishimeji-flow span{display:block}.kakishimeji-flow span{font-size:15px;line-height:1.35;margin-top:4px}.kakishimeji-flow small{font-size:12px;margin:0 0 2px;color:var(--green);font-weight:700}.kakishimeji-result{display:grid;grid-template-columns:3.3fr 1.05fr;gap:14px}.species-result{background:white;border:1px solid var(--line);padding:10px 12px}.species-result span{display:grid;grid-template-columns:1fr auto;align-items:center;gap:2px 8px;padding:5px 12px;text-align:left}.species-result span:nth-child(even){border-left:1px solid var(--line)}.species-result b{font-size:15px;line-height:1.25}.species-result em{font-size:18px;text-align:right}.species-result mark{grid-column:2;font-size:11px;justify-self:end}.species-result small{grid-column:1/-1;font-size:11px;color:var(--muted)}.true-ustale{display:flex;flex-direction:column;justify-content:center;background:var(--soft);border:2px dashed var(--green);padding:10px 14px;text-align:center}.true-ustale small{font-size:12px;color:var(--muted)}.true-ustale em{font-size:20px;margin:3px 0}.true-ustale strong{font-size:14px}.true-ustale span{font-size:12px;color:var(--muted)}.research-link{display:grid;grid-template-columns:.75fr 32px 1fr 2.1fr;align-items:center;gap:8px;margin-top:13px}.research-link>div{background:white;border-top:5px solid var(--green);padding:8px 12px;text-align:center}.research-link>div small,.research-link>div b,.research-link>div span{display:block}.research-link>div small{font-size:11px;color:var(--muted)}.research-link>div b{font-size:16px}.research-link>div span{font-size:12px}.research-link>i{color:var(--green);text-align:center}.research-link>p{margin:0;background:var(--ink);color:white;padding:9px 13px;font-size:14px;line-height:1.4}.research-link>p strong{color:var(--lime)}.research-link>p small{font-size:12px;color:#d7e2dc}.kakishimeji .takeaway{font-size:18px;padding:10px 18px;margin:13px 0 0}
+.kakishimeji{padding-top:54px!important}.kakishimeji h2{font-size:52px;margin-bottom:18px}.kakishimeji-flow{grid-template-columns:1fr 30px 1fr 30px .72fr;gap:9px;margin:0 0 13px}.kakishimeji-flow>div{padding:12px 14px;font-size:18px;min-height:78px}.kakishimeji-flow>i{font-size:20px}.kakishimeji-flow b,.kakishimeji-flow span{display:block}.kakishimeji-flow span{font-size:17px;line-height:1.35;margin-top:4px}.kakishimeji-flow small{font-size:17px;margin:0 0 2px;color:var(--green);font-weight:700}.kakishimeji-result{display:grid;grid-template-columns:3.3fr 1.05fr;gap:14px}.species-result{background:white;border:1px solid var(--line);padding:10px 12px}.species-result span{display:grid;grid-template-columns:1fr auto;align-items:center;gap:2px 8px;padding:5px 12px;text-align:left}.species-result span:nth-child(even){border-left:1px solid var(--line)}.species-result b{font-size:17px;line-height:1.25}.species-result em{font-size:18px;text-align:right}.species-result mark{grid-column:2;font-size:17px;justify-self:end}.species-result small{grid-column:1/-1;font-size:17px;color:var(--muted)}.true-ustale{display:flex;flex-direction:column;justify-content:center;background:var(--soft);border:2px dashed var(--green);padding:10px 14px;text-align:center}.true-ustale small{font-size:17px;color:var(--muted)}.true-ustale em{font-size:20px;margin:3px 0}.true-ustale strong{font-size:17px}.true-ustale span{font-size:17px;color:var(--muted)}.research-link{display:grid;grid-template-columns:.75fr 32px 1fr 2.1fr;align-items:center;gap:8px;margin-top:13px}.research-link>div{background:white;border-top:5px solid var(--green);padding:8px 12px;text-align:center}.research-link>div small,.research-link>div b,.research-link>div span{display:block}.research-link>div small{font-size:17px;color:var(--muted)}.research-link>div b{font-size:17px}.research-link>div span{font-size:17px}.research-link>i{color:var(--green);text-align:center}.research-link>p{margin:0;background:var(--ink);color:white;padding:9px 13px;font-size:17px;line-height:1.4}.research-link>p strong{color:var(--lime)}.research-link>p small{font-size:17px;color:#d7e2dc}.kakishimeji .takeaway{font-size:18px;padding:10px 18px;margin:13px 0 0}
 
 /* Focused layouts for the lower-density case summaries. */
 .used-names{display:grid;grid-template-columns:1fr 60px 1.4fr;align-items:stretch;gap:18px;margin-top:24px}
@@ -85,54 +85,200 @@ body { background:var(--paper); }
 /* Copy refinements requested for the name roles and dated-name summary. */
 .context small{display:block;font-size:17px;margin-top:7px;color:var(--muted)}
 .dated-names span{display:grid;grid-template-columns:1.2fr 1fr;align-items:baseline;gap:12px;text-align:left}
-.dated-names small{margin:0;font-size:13px}
-.tamago-note{font-size:16px;margin-top:16px}
+.dated-names small{margin:0;font-size:17px}
+.tamago-note{font-size:17px;margin-top:16px}
 
-/* Auditorium pass: retain the visual system while using more of the 16:9 canvas. */
-.reveal .slides section{padding:62px 104px 58px}
-.reveal h2{margin-bottom:30px}
-.reveal h3{font-size:34px;line-height:1.35}
-.reveal p,.reveal li{line-height:1.48}
-.case-label{font-size:23px;line-height:1.2;margin-bottom:13px}
-.refs{left:104px;right:120px;bottom:24px;font-size:18px;line-height:1.3}
-.lead-card{gap:34px;padding:29px 38px;margin:17px 0 26px}
-.lead-card i{font-size:50px}.lead-card p{font-size:36px;line-height:1.45}
-.takeaway{padding:22px 32px;margin-top:24px;font-size:29px;line-height:1.4}
-.three-grid,.two-grid{gap:27px}
-.three-grid article,.two-grid article{padding:35px}
-.three-grid article>i,.big-cards article>i{font-size:47px}
-.three-grid article p{font-size:28px}.three-grid article small{font-size:23px}
-.jp-name,.latin{min-height:52px}
-.section-lead{font-size:36px;margin:0 0 34px}
-.big-cards article{padding:55px 30px;min-height:350px}.big-cards h3{font-size:40px}.big-cards p{font-size:29px}
-.taxonomy-flow{margin:18px 0 27px}.taxonomy-flow>div{padding:34px;font-size:32px}.taxonomy-flow small{font-size:21px}
-.compact article{padding:27px 32px}.compact ul{font-size:26px}
-.context{font-size:29px;margin:-5px 0 27px}.context small{font-size:20px}
-.tree-list>div:first-child{padding:21px;font-size:25px}.children{margin-top:58px;gap:24px}.children p{padding:25px 14px;font-size:25px}mark{font-size:18px}
-.update-list li{padding:20px 27px;margin:14px 0;font-size:25px}
-.species-chips{gap:18px}.species-chips span{padding:27px 14px;font-size:27px}
-.single-flow{gap:38px;font-size:33px}
-.cornea-update article{padding:25px 20px;min-height:355px}.cornea-update time{font-size:43px}.cornea-update small{font-size:19px}.cornea-update h3{font-size:29px}.cornea-update p{font-size:21px}
-.method-note p{font-size:28px}
-.genus-grid article{padding:29px}.genus-grid h3 span{font-size:20px}.genus-grid ul{font-size:22px}.genus-grid small{font-size:20px}
-.story-list{gap:15px 27px}.story-list li{font-size:25px;padding:17px 22px}
-.analogy-rule{font-size:25px;padding:17px 24px}.company div{padding:48px 50px}.company span{font-size:25px}
-.stat{margin:0 0 25px}.stat span{font-size:29px}.bar-list{gap:16px 27px}.bar-list div{padding:19px 27px;font-size:26px}
-.taxonomy-reason{margin-top:26px}.taxonomy-reason p{padding:19px 16px;font-size:20px}.taxonomy-reason>i{font-size:24px}
-.boletaceae-review .hero-stats article{min-height:285px}.hero-stats span{font-size:31px}.hero-stats small{font-size:21px}.boletaceae-review .takeaway{font-size:29px;padding:20px 30px}.boletaceae-review .takeaway small{font-size:21px}
-.guidelines{gap:17px 27px}.guidelines p{padding:20px;font-size:25px}.guideline-summary{font-size:23px;padding:16px 23px}
-.role-intro{font-size:26px;margin:0 0 24px}.response-grid{gap:28px;margin-top:0}.response-grid article{padding:32px 35px;min-height:255px}.response-grid i{font-size:40px}.response-grid h3{font-size:31px}.response-grid ul{font-size:23px}.response-grid p{font-size:24px}.response-grid small{font-size:19px;margin-top:15px}
-.calm-conclusion{background:var(--ink);border-left:8px solid var(--lime);color:white;font-size:30px;line-height:1.5;margin-top:30px;padding:25px 34px}.calm-conclusion strong{color:var(--lime)}
-.reference-columns{column-gap:54px}.reference-columns p{font-size:17px;line-height:1.35;margin-bottom:10px;padding-bottom:8px}
 
-/* Dense evidence slides receive bespoke expansion rather than smaller type. */
-.history-intro{font-size:23px;margin:10px 0 16px}.history-notes{gap:19px}.history-notes p{padding:18px 19px;font-size:18px;line-height:1.45}.history-notes time{font-size:25px}.history-notes time small{font-size:15px}.history-message{margin-top:17px;font-size:23px}
-.habitat-compare article{padding:29px}.habitat-compare article small{font-size:19px}.habitat-compare h3{font-size:31px}.habitat-compare article p{font-size:24px}.range-axis{font-size:18px}.range-axis small{font-size:17px}.overlap-note{padding:20px 28px}.overlap-note p{font-size:25px}.overlap-note small{font-size:18px}.compact-method{padding:18px 30px}.compact-method p{font-size:23px}
-.nigakuritake .taxonomy-flow>div{padding:23px 27px;font-size:28px}.nigakuritake-evidence article{padding:19px}.nigakuritake-evidence article>i{font-size:38px}.nigakuritake-evidence p{font-size:24px}.nigakuritake-evidence small{font-size:18px}.overlap-caution{font-size:18px}.nigakuritake .lead-card{padding:21px 30px}.nigakuritake .lead-card p{font-size:26px}
-.kakishimeji{padding-top:48px!important}.kakishimeji h2{font-size:55px;margin-bottom:18px}.kakishimeji-flow>div{padding:16px;font-size:22px;min-height:94px}.kakishimeji-flow span{font-size:18px}.kakishimeji-flow small{font-size:15px}.species-result{padding:14px}.species-result span{padding:8px 14px}.species-result b{font-size:18px}.species-result em{font-size:21px}.species-result mark,.species-result small{font-size:14px}.true-ustale{padding:14px}.true-ustale small{font-size:15px}.true-ustale em{font-size:24px}.true-ustale strong{font-size:17px}.true-ustale span{font-size:15px}
-.used-names{margin-top:28px}.used-names>div{padding:36px 38px}.used-names small{font-size:20px}.used-names p{font-size:28px}.used-names h3{font-size:31px}.dated-names small{font-size:16px}.tamago-note{font-size:19px;margin-top:20px}
-.kakishimeji.chemistry .research-link{margin:38px auto 28px}.kakishimeji.chemistry .research-link>div{padding:30px}.kakishimeji.chemistry .research-link>div small{font-size:16px}.kakishimeji.chemistry .research-link>div b{font-size:22px}.kakishimeji.chemistry .research-link>div span{font-size:17px}.kakishimeji.chemistry .research-link>p{font-size:24px;padding:28px 34px}.kakishimeji.chemistry .research-link>p small{font-size:17px}.kakishimeji.chemistry .takeaway{font-size:28px;padding:23px}
+/* Fixed-canvas slide system: header / main / meta. */
+:root {
+  --type-slide-title: 58px;
+  --type-lead: 32px;
+  --type-body: 27px;
+  --type-card-title: 32px;
+  --type-card-body: 25px;
+  --type-caption: 18px;
+  --type-reference: 17px;
+  --type-case-label: 22px;
+  --slide-gap: 22px;
+  --card-gap: 26px;
+}
 
-/* The synthesis slides deliberately carry the strongest vertical presence. */
-.looking-back h2{margin-bottom:14px}.looking-back .evolution-label{font-size:24px}.looking-back .evolution{margin-top:24px}.looking-back .evolution>span{min-height:245px;font-size:31px;padding:18px}.looking-back .evolution>span i{font-size:55px;margin-bottom:22px}.looking-back .evolution>i{font-size:27px}.looking-back .evolution small{font-size:20px;margin-top:11px}.looking-back .takeaway{font-size:30px;line-height:1.45;margin-top:29px;padding:22px 30px}
-.name-response h2{font-size:58px;margin-bottom:24px}
+.reveal .slides section.slide {
+  display: grid !important;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  width: 1600px;
+  height: 900px;
+  padding: 52px 96px 26px;
+  overflow: hidden;
+}
+.slide-header { min-width: 0; margin-bottom: var(--slide-gap); }
+.slide-header:empty { display: none; }
+.slide-header h2 { margin: 0; font-size: var(--type-slide-title); line-height: 1.18; }
+.slide-header .case-label { display: block; margin: 0 0 9px; font-size: var(--type-case-label); line-height: 1.2; }
+.slide-main { min-width: 0; min-height: 0; font-size: var(--type-body); }
+.slide-meta { min-width: 0; min-height: 0; }
+.slide-meta:empty { display: none; }
+.slide-meta.refs {
+  position: static;
+  align-self: end;
+  padding-top: 11px;
+  min-height: 34px;
+  color: #71807a;
+  font-size: var(--type-reference);
+  line-height: 1.3;
+}
+.reveal .slides section::after { right: 48px; bottom: 27px; font-size: 20px; }
+
+/* A small, consistent type scale replaces case-by-case compression. */
+.slide-main p, .slide-main li { line-height: 1.48; }
+.slide-main small, .slide-main .note, .slide-main mark { font-size: var(--type-caption); line-height: 1.42; }
+.slide-main h3 { font-size: var(--type-card-title); line-height: 1.3; }
+.section-lead { margin: 0; font-size: var(--type-lead); line-height: 1.42; }
+.context { margin: 0; font-size: 26px; line-height: 1.4; }
+.context small { margin-top: 6px; font-size: var(--type-caption); }
+.lead-card { gap: 30px; margin: 0; padding: 25px 34px; }
+.lead-card i { font-size: 46px; }
+.lead-card p { font-size: 30px; line-height: 1.42; }
+.takeaway { margin: 0; padding: 18px 28px; font-size: 27px; line-height: 1.38; }
+
+/* Card primitives fill the available main row instead of stopping at content height. */
+.layout-cards-2 .slide-main,
+.layout-cards-3 .slide-main { display: grid; gap: var(--slide-gap); }
+.layout-cards-2 .slide-main { grid-template-rows: auto minmax(0, 1fr) auto; }
+.layout-cards-3 .slide-main { grid-template-rows: auto minmax(0, 1fr) auto; }
+.layout-cards-2 .two-grid,
+.layout-cards-3 .three-grid { min-height: 0; height: 100%; gap: var(--card-gap); }
+.layout-cards-2 .two-grid article,
+.layout-cards-3 .three-grid article {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: 34px 36px;
+}
+.layout-cards-3 .three-grid article > i,
+.layout-cards-2 .big-cards article > i { font-size: 48px; }
+.layout-cards-3 .three-grid article p { font-size: var(--type-card-body); }
+.layout-cards-3 .three-grid article small { font-size: var(--type-caption); }
+.layout-cards-2 .big-cards article { min-height: 0; padding: 38px 32px; }
+.layout-cards-2 .big-cards h3 { font-size: 38px; }
+.layout-cards-2 .big-cards p { font-size: 28px; }
+.layout-cards-2 .compact ul { font-size: 25px; }
+.name-response .response-grid { height: 100%; margin: 0; gap: var(--card-gap); }
+.name-response .response-grid article { display: flex; flex-direction: column; justify-content: center; min-height: 0; padding: 30px 34px; }
+.name-response .response-grid h3 { font-size: 30px; }
+.name-response .response-grid p, .name-response .response-grid ul { font-size: 23px; }
+.name-response .response-grid small { font-size: var(--type-caption); }
+.name-response .calm-conclusion { margin: 0; padding: 20px 28px; font-size: 27px; }
+
+/* Flow and tree layouts use the middle of the canvas with larger nodes. */
+.layout-taxonomy-flow .slide-main { display: flex; flex-direction: column; justify-content: center; gap: 18px; }
+.layout-taxonomy-flow .taxonomy-flow { margin: 0; }
+.layout-taxonomy-flow .taxonomy-flow > div { padding: 28px 32px; font-size: 29px; }
+.layout-taxonomy-flow .taxonomy-flow small { font-size: var(--type-caption); }
+.layout-taxonomy-flow .lead-card, .layout-taxonomy-flow .takeaway { margin: 0; }
+.layout-tree .slide-main { display: grid; grid-template-rows: auto auto minmax(0, 1fr); gap: 20px; }
+.layout-tree .tree-list { align-self: stretch; display: flex; flex-direction: column; justify-content: center; }
+.layout-tree .tree-list > div:first-child { padding: 20px; font-size: 25px; }
+.layout-tree .children { margin-top: 62px; gap: 25px; }
+.layout-tree .children p { margin: 0; padding: 24px 16px; font-size: 24px; }
+
+/* Lists and stories gain spacing and legible type without becoming oversized blocks. */
+.layout-dense-list .slide-main { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 17px; }
+.layout-dense-list .update-list { align-self: center; }
+.layout-dense-list .update-list li { margin: 15px 0; padding: 20px 26px; font-size: 24px; }
+.layout-story .slide-main { display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 22px; }
+.layout-story .story-list { align-self: center; gap: 18px 27px; }
+.layout-story .story-list li { display: flex; align-items: center; margin: 0; padding: 20px 24px; font-size: 24px; }
+.layout-story .research-link { align-self: center; margin: 0; max-width: none; }
+.layout-story .research-link > div { padding: 24px; }
+.layout-story .research-link > div small, .layout-story .research-link > div span,
+.layout-story .research-link > p small { font-size: var(--type-caption); }
+.layout-story .research-link > div b { font-size: 23px; }
+.layout-story .research-link > p { padding: 25px 30px; font-size: 23px; }
+
+/* Timelines and comparisons reserve the full central field for their visual story. */
+.layout-timeline .slide-main { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 20px; }
+.layout-timeline .cornea-update, .layout-timeline .history-notes { height: 100%; margin: 0; }
+.layout-timeline .cornea-update article { min-height: 0; padding: 28px 22px; display: flex; flex-direction: column; justify-content: center; }
+.layout-timeline .cornea-update time { font-size: 42px; }
+.layout-timeline .cornea-update small, .layout-timeline .history-notes time small { font-size: var(--type-caption); }
+.layout-timeline .cornea-update h3 { min-height: 0; font-size: 28px; }
+.layout-timeline .cornea-update p { font-size: 20px; }
+.layout-timeline .history-notes { gap: 22px; }
+.layout-timeline .history-notes p { display: flex; flex-direction: column; justify-content: center; padding: 24px; font-size: 20px; }
+.layout-timeline .history-notes time { font-size: 27px; }
+.layout-timeline .history-message { margin: 0; font-size: 25px; }
+.layout-comparison .slide-main { display: flex; min-height: 0; flex-direction: column; justify-content: center; gap: 20px; }
+.layout-comparison .used-names { flex: 1; min-height: 0; margin: 0; }
+.layout-comparison .used-names > div { display: flex; flex-direction: column; justify-content: center; padding: 30px 36px; }
+.layout-comparison .used-names small, .layout-comparison .dated-names small { font-size: var(--type-caption); }
+.layout-comparison .used-names p { font-size: 27px; }
+.layout-comparison .used-names h3 { font-size: 30px; }
+.layout-comparison .habitat-compare article { padding: 27px; }
+.layout-comparison .habitat-compare article small, .layout-comparison .range-axis small,
+.layout-comparison .overlap-note small { font-size: var(--type-caption); }
+.layout-comparison .species-chips span { padding: 25px 14px; font-size: 25px; }
+.layout-comparison .single-flow { font-size: 29px; }
+.layout-comparison .company { min-height: 360px; }
+.layout-comparison .company span { font-size: 24px; }
+
+/* Dense taxonomy evidence remains a shared component, not a page-number hack. */
+.kakishimeji { padding-top: 52px !important; }
+.kakishimeji .slide-header h2 { font-size: 54px; }
+.kakishimeji-flow { grid-template-columns: 1fr 34px 1fr 34px .78fr; gap: 10px; margin: 0; }
+.kakishimeji-flow > div { min-height: 108px; padding: 18px; font-size: 23px; }
+.kakishimeji-flow span, .kakishimeji-flow small { font-size: var(--type-caption); }
+.kakishimeji-result { gap: 17px; }
+.species-result { padding: 14px; }
+.species-result span { padding: 9px 14px; }
+.species-result b { font-size: 19px; }
+.species-result em { font-size: 21px; }
+.species-result mark, .species-result small, .true-ustale small, .true-ustale span { font-size: 17px; }
+.true-ustale em { font-size: 24px; }
+.true-ustale strong { font-size: 18px; }
+
+/* Number, statistics, and progression layouts distribute emphasis vertically. */
+.layout-number .slide-main { display: grid; min-height: 0; align-items: center; gap: 18px; }
+.layout-number .stat { margin: 0; }
+.layout-number .stat strong { font-size: 94px; }
+.layout-number .stat span { font-size: 30px; }
+.layout-number .bar-list { gap: 17px 27px; }
+.layout-number .bar-list div { padding: 20px 28px; font-size: 26px; }
+.layout-number .taxonomy-reason { margin: 0; }
+.layout-number .taxonomy-reason p { padding: 20px 17px; font-size: 20px; }
+.layout-number .hero-stats { height: 100%; margin: 0; }
+.layout-number .hero-stats article { min-height: 0; padding: 28px; }
+.layout-number .hero-stats strong, .layout-number .hero-stats > article > i { font-size: 88px; }
+.layout-number .hero-stats span { font-size: 30px; }
+.layout-number .hero-stats small, .layout-number .takeaway small { font-size: var(--type-caption); }
+.layout-progression .slide-main { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 22px; }
+.layout-progression .evolution { height: 100%; margin: 0; }
+.layout-progression .evolution > span { min-height: 0; padding: 22px; font-size: 29px; }
+.layout-progression .evolution > span i { font-size: 52px; }
+.layout-progression .evolution small { font-size: var(--type-caption); }
+
+.layout-guidelines .slide-main { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 18px; }
+.layout-guidelines .guidelines { height: 100%; gap: 18px 27px; }
+.layout-guidelines .guidelines p { display: flex; align-items: center; padding: 20px 22px; font-size: 23px; }
+.layout-guidelines .guideline-summary { margin: 0; padding: 15px 22px; font-size: 22px; }
+
+/* Title and statement retain their intentionally centered compositions. */
+.layout-title { grid-template-rows: minmax(0, 1fr) 0 auto !important; }
+.layout-title .slide-header { align-self: center; margin: 0; }
+.layout-title .slide-header h1 { margin: 0; }
+.layout-title .slide-main { display: none; }
+.layout-title .slide-meta { display: flex; justify-content: space-between; padding-top: 22px; border-top: 1px solid #50645b; font-size: 22px; }
+.layout-statement { grid-template-rows: minmax(0, 1fr) !important; padding-left: 180px !important; }
+.layout-statement .slide-main { display: flex; flex-direction: column; justify-content: center; }
+.layout-statement .slide-main h2 { color: white; font-family: 'Shippori Mincho', serif; font-size: 70px; }
+
+/* References are the sole deliberately dense layout, but remain presentation-legible. */
+.layout-references .slide-header { margin-bottom: 18px; }
+.layout-references .slide-header h2 { font-size: 48px; }
+.layout-references .slide-main { min-height: 0; overflow: hidden; }
+.layout-references .reference-columns { height: 100%; columns: 2; column-gap: 52px; }
+.layout-references .reference-columns p { margin: 0 0 10px; padding-bottom: 8px; font-size: var(--type-reference); line-height: 1.32; }
+
+@media (max-width: 900px) { .reveal { font-size: 28px; } }
+@media print { .reveal .slides section { aspect-ratio: 16 / 9; } }
