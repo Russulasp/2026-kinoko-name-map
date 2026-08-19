@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { chromium } from 'playwright';
+import { createExportFilename } from './export-filename.mjs';
 import { startStaticServer } from './static-server.mjs';
 
 const WIDTH = 1600;
@@ -84,7 +85,7 @@ try {
   const page = await browser.newPage({ viewport: { width: WIDTH, height: HEIGHT }, deviceScaleFactor: 1 });
   await page.goto(`http://127.0.0.1:${address.port}/`);
   const images = await captureSlides(page, temporaryDirectory);
-  const output = join(root, 'dist', `kinoko-name-map.${format}`);
+  const output = join(root, 'dist', createExportFilename(format));
   if (format === 'pptx') await writePptx(images, output);
   else await writePdf(page, images, output);
   console.log(`Created ${output}`);

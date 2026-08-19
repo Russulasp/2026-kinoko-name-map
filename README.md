@@ -55,7 +55,7 @@ Reveal.js、Font AwesomeなどのCDNリソースとWebフォントを読み込�
 npm run export:pptx
 ```
 
-16:9の `dist/kinoko-name-map.pptx` が生成されます。
+16:9の `dist/kinoko-name-map-YYYYMMDDTHHMMSS-sssZ.pptx` が生成されます。ファイル名には生成時刻（UTC）がミリ秒まで付くため、以前の出力を上書きせずに保存できます。
 
 ### PDF生成コマンド
 
@@ -63,7 +63,7 @@ npm run export:pptx
 npm run export:pdf
 ```
 
-16:9の `dist/kinoko-name-map.pdf` が生成されます。こちらも同じPNGキャプチャをChromiumでPDF化するため、PPTXとページ順・表示状態が一致します。
+16:9の `dist/kinoko-name-map-YYYYMMDDTHHMMSS-sssZ.pdf` が生成されます。こちらも生成時刻（UTC）がファイル名に付き、同じPNGキャプチャをChromiumでPDF化するため、PPTXとページ順・表示状態が一致します。
 
 ### 追加・変更したエクスポート関連ファイル
 
