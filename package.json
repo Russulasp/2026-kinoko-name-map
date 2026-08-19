@@ -5,11 +5,14 @@
   "scripts": {
     "start": "node scripts/serve.mjs",
     "test": "node scripts/check-slides.mjs && node --test scripts/*.test.mjs",
+    "audit": "node scripts/audit-slides.mjs",
     "export:pptx": "node scripts/export-slides.mjs pptx",
     "export:pdf": "node scripts/export-slides.mjs pdf"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "playwright": "^1.54.0",
-    "pptxgenjs": "^4.0.1"
+    "pptxgenjs": "^4.0.1",
+    "reveal.js": "^5.2.1"
   }
 }

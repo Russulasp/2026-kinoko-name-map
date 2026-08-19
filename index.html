@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>きのこの和名・分類の変遷</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="css/theme.css">
 </head>
 <body>
@@ -49,7 +49,7 @@
       <aside class="slide-meta"></aside>
     </section>
 
-    <section class="slide layout-cards-2">
+    <section class="slide layout-cards-2 layout-content-fit">
       <header class="slide-header"><h2>今回取り上げる主な変化</h2></header>
       <main class="slide-main"><p class="section-lead">近年のきのこ分類では、<strong>形態</strong>だけでなく<strong>DNA情報</strong>も用いられるようになった。</p>
       <div class="two-grid big-cards">
@@ -59,7 +59,7 @@
       <aside class="slide-meta"></aside>
     </section>
 
-    <section class="slide layout-cards-2">
+    <section class="slide layout-cards-2 layout-content-fit">
       <header class="slide-header"><div class="case-label">事例 01</div><h2>オオミノコフキタケ、<br>コフキサルノコシカケ</h2></header>
       <main class="slide-main"><div class="lead-card"><i class="fa-solid fa-magnifying-glass"></i><p>見た目はよく似ているが、<strong>胞子形態を中心に区別</strong>され、分布傾向にも違いがある。</p></div>
       <div class="two-grid compact">
@@ -119,7 +119,7 @@
       <aside class="slide-meta refs">CASE 03 refs: 白水ほか（2018）；Wu et al.（2021）；Yang（2025）；保坂・糟谷（2026）</aside>
     </section>
 
-    <section class="slide layout-comparison tamago-history">
+    <section class="slide layout-comparison layout-content-fit tamago-history">
       <header class="slide-header"><div class="case-label">事例 04</div><h2>タマゴタケ — 日本産に使われてきた学名</h2></header>
       <main class="slide-main"><div class="used-names">
         <div><small>日本産に適用された学名</small><p class="dated-names"><span><em>Amanita caesarea</em><small>初期の日本産記録</small></span><span><em>A. hemibapha</em><small>1975　本郷</small></span><span><em>A. caesareoides</em><small>2013・2016　Endo et al.</small></span></p></div>
@@ -130,7 +130,7 @@
       <aside class="slide-meta"></aside>
     </section>
 
-    <section class="slide layout-timeline tamago-history">
+    <section class="slide layout-timeline layout-content-fit tamago-history">
       <header class="slide-header"><div class="case-label">事例 04</div><h2>「タマゴタケ」という和名を遡る</h2></header>
       <main class="slide-main"><p class="history-intro">日本で「タマゴタケ」と呼ばれてきたものを、古い記録までさかのぼると——</p>
       <div class="history-notes">
@@ -185,14 +185,14 @@
       <aside class="slide-meta"></aside>
     </section>
 
-    <section class="slide layout-story kakishimeji chemistry">
+    <section class="slide layout-story layout-emphasis kakishimeji chemistry">
       <header class="slide-header"><div class="case-label">事例 06</div><h2>分類改訂が毒成分研究にも影響</h2></header>
       <main class="slide-main"><div class="research-link"><div><small>Aoki et al.（2021）</small><b>分類改訂</b><span>分子系統＋形態</span></div><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i><div><small>Watanabe（2025）</small><b>毒成分研究を再検討</b><span>ゲノム規模＋代謝物解析</span></div><p>子実体では <strong>ustalic acid</strong> 含有量に大きな差。一方、培養菌糸では <em>T. stans</em>・<em>T. albobrunneum</em> からも検出<br><small>子実体で少ない／検出されない ≠ 生合成能力がない</small></p></div>
       <p class="takeaway">分類が変わると、過去の毒成分研究で扱われた<strong>「種」の解釈も変わりうる</strong></p></main>
       <aside class="slide-meta refs">CASE 06 refs: Aoki et al.（2021）；Watanabe（2025）</aside>
     </section>
 
-    <section class="slide layout-cards-3">
+    <section class="slide layout-cards-3 layout-content-fit">
       <header class="slide-header"><div class="case-label">事例 07</div><h2>チチタケの仲間 — 旧チチタケ属</h2></header>
       <main class="slide-main"><p class="section-lead">旧 <em>Lactarius</em> は単系統ではないことが示され、複数の属へ再編された。</p>
       <div class="three-grid genus-grid">
@@ -204,7 +204,7 @@
       <aside class="slide-meta"></aside>
     </section>
 
-    <section class="slide layout-story">
+    <section class="slide layout-story layout-emphasis">
       <header class="slide-header"><div class="case-label">事例 07</div><h2><em>Lactarius</em> の基準種をめぐる整理</h2></header>
       <main class="slide-main"><ol class="story-list"><li>旧 <em>Lactarius</em> の<strong>主要な種群</strong>は、分子系統解析で大きく2系統に分かれた</li><li>旧基準種の<strong>ツチカブリ</strong> <em>L. piperatus</em> は少数派側に入った</li><li>命名規約どおりなら、多数派側の多くの種に改名が必要になる</li><li>大量改名を避け命名を安定させるため、<em>L. torminosus</em> を<strong>保存基準種</strong>とする案が提案された</li><li><em>Lactarius</em> という属名は多数派側に残り、少数派側には古い属名 <em>Lactifluus</em> が復活した</li></ol></main>
       <aside class="slide-meta"></aside>
@@ -249,7 +249,7 @@
       <aside class="slide-meta refs">Vellinga et al.（2015）；Tremble et al.（2024）</aside>
     </section>
 
-    <section class="slide layout-cards-2 name-response">
+    <section class="slide layout-cards-2 layout-content-fit name-response">
       <header class="slide-header"><h2>では、分類が変わったとき、和名はどうする？</h2></header>
       <main class="slide-main"><p class="role-intro">分類の見直しによって学名が変わることがある。和名は、分類群との対応関係を確かめて扱う。</p>
       <div class="response-grid">
@@ -320,7 +320,7 @@
     </section>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
+<script src="node_modules/reveal.js/dist/reveal.js"></script>
 <script src="js/presentation.js"></script>
 </body>
 </html>
