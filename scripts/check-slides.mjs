@@ -13,7 +13,14 @@ const assertions = [
   [html.includes('解析した日本産標本では確認されなかった') && html.includes('子実体で少ない／検出されない ≠ 生合成能力がない'), 'Tricholoma revision and ustalic acid findings are appropriately scoped'],
   [html.includes('参考文献'), 'References are present'],
   [!html.includes('class="kicker"') && !html.includes('class="eyebrow"'), 'Decorative English headings are absent'],
-  [html.includes('事例 01') && html.includes('事例 08 — 次の問い') && !html.includes('>CASE '), 'Case labels are presented in Japanese'],
+  [html.includes('事例 01') && html.includes('事例 08 — 次の問い') && !html.includes('class="case-label">CASE '), 'Case labels are presented in Japanese'],
+  [!html.includes('完全に統一・網羅したリストは存在しない') && html.includes('和名そのものに学名のような命名規約や拘束力はない'), 'Name-list wording avoids an unsupported nonexistence claim'],
+  [
+    [...html.matchAll(/CASE (0[1-4]|0[6-8]) refs:/g)].length === 7 &&
+      html.includes('CASE 01 refs: 服部（2001）') &&
+      html.includes('CASE 08 refs: Nuhn et al.（2013）'),
+    'Multi-slide case references are consolidated on case-ending slides'
+  ],
   [titleSlide.includes('きのこの') && titleSlide.includes('2026年9月') && titleSlide.includes('渡邉 大輔') && !titleSlide.includes('subtitle'), 'Title slide contains only the requested presentation details'],
   [css.includes('aspect-ratio') || css.includes('1600'), '16:9 presentation styling is present'],
   [js.includes('Reveal.initialize') && js.includes('width: 1600') && js.includes('height: 900'), 'Reveal initializes at 16:9']
