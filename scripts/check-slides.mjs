@@ -15,6 +15,17 @@ const assertions = [
   [html.includes('白水ほか（2018）の解析では') && html.includes('species complex') && html.includes('少なくとも一部の日本産では') && html.includes('適用が<strong>暫定的'), 'Auricularia findings and later uncertainty are appropriately scoped'],
   [html.includes('解析した日本産標本では確認されなかった') && html.includes('子実体で少ない／検出されない ≠ 生合成能力がない'), 'Tricholoma revision and ustalic acid findings are appropriately scoped'],
   [html.includes('参考文献'), 'References are present'],
+  [
+    html.includes('Moncalvo & Buchanan（2008）*') &&
+      html.includes('Buyck et al.（2010）*') &&
+      html.includes('Wu et al.（2014）*') &&
+      !html.includes('Nuhn et al.（2013）*') &&
+      html.includes('丹沢大山総合調査団（編）（2007）†') &&
+      !html.includes('服部（2001）*') && !html.includes('服部（2001）†'),
+    'Reference verification markers match the confirmed source scope'
+  ],
+  [html.includes('* 一般公開されているAbstract等で確認（全文未確認）') && html.includes('† 二次資料から確認（原典未確認）'), 'Reference verification legend explains both markers'],
+  [html.includes('<strong>2つのITS配列型</strong>') && !html.includes('<strong>2系統</strong>'), 'Ganoderma finding remains scoped to two ITS sequence types'],
   [!html.includes('class="kicker"') && !html.includes('class="eyebrow"'), 'Decorative English headings are absent'],
   [html.includes('事例 01') && html.includes('事例 08 — 次の問い') && !html.includes('class="case-label">CASE '), 'Case labels are presented in Japanese'],
   [!html.includes('完全に統一・網羅したリストは存在しない') && html.includes('和名そのものに学名のような命名規約や拘束力はない'), 'Name-list wording avoids an unsupported nonexistence claim'],
