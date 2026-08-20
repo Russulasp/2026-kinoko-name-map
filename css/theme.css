@@ -319,5 +319,156 @@ body { background:var(--paper); }
 .reveal .slides section.slide .slide-main mark,
 .reveal .slides section.slide .slide-main .muted { font-size: var(--type-caption); }
 
+/* Revision pass: preserve the shared canvas while centering naturally sized content. */
+.layout-main-center .slide-main {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* The date and presenter belong to the title block, not to the reference rail. */
+.layout-title .slide-header { width: 100%; }
+.layout-title .title-details {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 56px;
+  color: #d7e2dc;
+  font-size: 25px;
+  line-height: 1.45;
+}
+.layout-title .title-details strong { color: white; font-weight: 600; }
+.layout-title .slide-meta { display: none; border: 0; padding: 0; }
+
+/* Classification is the hub; the two naming systems remain equal destinations. */
+.layout-name-system .slide-main { display: flex; align-items: center; justify-content: center; }
+.name-system { width: 100%; max-width: 1240px; }
+.name-system article {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px 30px;
+}
+.name-system article > i { flex: 0 0 auto; color: var(--green); font-size: 43px; }
+.name-system article h3 { margin: 0 0 4px; font-size: 30px; }
+.name-system article p { margin: 0; font-size: 25px; font-weight: 700; }
+.name-system article small { display: block; color: var(--muted); font-size: var(--type-caption); }
+.name-system .classification { width: 52%; margin: 0 auto; background: var(--soft); border-color: #cbd8cd; }
+.name-branches { position: relative; width: 50%; height: 42px; margin: 0 auto; border-bottom: 2px solid var(--green); }
+.name-branches::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; border-left: 2px solid var(--green); }
+.name-branches span { position: absolute; bottom: -14px; height: 14px; border-left: 2px solid var(--green); }
+.name-branches span:first-child { left: 0; }
+.name-branches span:last-child { right: 0; }
+.name-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+.name-pair article { min-height: 150px; }
+.relationship-note {
+  margin: 22px 0 0;
+  padding: 15px 24px;
+  border-radius: 6px;
+  background: var(--ink);
+  color: white;
+  text-align: center;
+  font-size: 22px;
+}
+.relationship-note strong { color: var(--lime); }
+
+/* A literal one-to-three tree makes the 2015 split readable before the labels. */
+.layout-tree .tree-list { justify-content: center; }
+.layout-tree .tree-list > div:first-child { width: 40%; }
+.layout-tree .tree-list > div:first-child b { display: block; color: var(--lime); font-size: 20px; }
+.layout-tree .branch-label {
+  position: relative;
+  display: flex;
+  width: max-content;
+  margin: 12px auto 22px;
+  flex-direction: column;
+  align-items: center;
+  color: var(--green);
+  font-size: 19px;
+  font-weight: 700;
+}
+.layout-tree .branch-label i { font-size: 31px; }
+.layout-tree .children { margin-top: 0; gap: 25px; }
+.layout-tree .children::before { top: -17px; }
+.layout-tree .children p::before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  height: 17px;
+  border-left: 2px solid var(--green);
+}
+
+/* A restrained numbered chain replaces the unrelated row of text boxes. */
+.layout-lactarius-flow .slide-main { display: flex; align-items: center; }
+.lactarius-flow {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 38px;
+  margin: 0;
+  padding: 0;
+  counter-reset: lactarius-step;
+  list-style: none;
+}
+.lactarius-flow li {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 190px;
+  align-items: center;
+  padding: 40px 24px 24px;
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--green);
+  background: white;
+  font-size: 22px;
+  line-height: 1.5;
+  counter-increment: lactarius-step;
+}
+.lactarius-flow li::before {
+  content: counter(lactarius-step, decimal-leading-zero);
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  color: var(--green);
+  font-size: 18px;
+  font-weight: 700;
+}
+.lactarius-flow li:not(:nth-child(4))::after {
+  content: "\f054";
+  position: absolute;
+  z-index: 2;
+  right: -27px;
+  color: var(--green);
+  font-family: "Font Awesome 6 Free";
+  font-size: 17px;
+  font-weight: 900;
+}
+.lactarius-flow li:last-child {
+  grid-column: 1 / -1;
+  min-height: 104px;
+  justify-content: center;
+  padding: 24px 40px 24px 72px;
+  border-color: var(--ink);
+  border-top-color: var(--lime);
+  background: var(--ink);
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.lactarius-flow li:last-child::before { top: 50%; transform: translateY(-50%); color: var(--lime); }
+.lactarius-flow li:last-child strong { color: var(--lime); }
+
+/* Keep the analytical progression visually connected without oversized cards. */
+.layout-progression .slide-main { grid-template-rows: auto auto auto; align-content: center; gap: 17px; }
+.layout-progression .evolution { height: auto; grid-template-columns: 1fr 38px 1fr 38px 1fr 38px 1.16fr; }
+.layout-progression .evolution > span { min-height: 156px; padding: 18px; }
+.layout-progression .evolution > i { font-size: 19px; }
+.looking-back .takeaway { margin-top: 4px; }
+
 @media (max-width: 900px) { .reveal { font-size: 28px; } }
 @media print { .reveal .slides section { aspect-ratio: 16 / 9; } }
+.layout-tree .children p { position: relative; }
