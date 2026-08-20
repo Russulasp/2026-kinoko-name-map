@@ -8,8 +8,8 @@ const slides = [...html.matchAll(/<section class="([^"]*\bslide\b[^"]*)">([\s\S]
 
 const assertions = [
   [html.includes('class="reveal"') && html.includes('class="slides"'), 'Reveal container is present'],
-  [(html.match(/<section/g) ?? []).length === 28, 'Presentation contains exactly 28 slides'],
-  [slides.length === 28 && slides.every(([, , body]) => body.includes('class="slide-header"') && body.includes('class="slide-main"') && body.includes('class="slide-meta')), 'Every slide uses the header/main/meta structure'],
+  [(html.match(/<section/g) ?? []).length === 27, 'Presentation contains exactly 27 slides after consolidating slides 02 and 03'],
+  [slides.length === 27 && slides.every(([, , body]) => body.includes('class="slide-header"') && body.includes('class="slide-main"') && body.includes('class="slide-meta')), 'Every slide uses the header/main/meta structure'],
   [slides.every(([, classes]) => /\blayout-[\w-]+\b/.test(classes)), 'Every slide has a layout primitive'],
   [html.includes('Amanita satotamagotake') && html.includes('Lactifluus'), 'Key manuscript examples are present'],
   [html.includes('白水ほか（2018）の解析では') && html.includes('species complex') && html.includes('少なくとも一部の日本産では') && html.includes('適用が<strong>暫定的'), 'Auricularia findings and later uncertainty are appropriately scoped'],
