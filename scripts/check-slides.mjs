@@ -28,7 +28,13 @@ const assertions = [
   [html.includes('<strong>2つのITS配列型</strong>') && !html.includes('<strong>2系統</strong>'), 'Ganoderma finding remains scoped to two ITS sequence types'],
   [!html.includes('class="kicker"') && !html.includes('class="eyebrow"'), 'Decorative English headings are absent'],
   [html.includes('事例 01') && html.includes('事例 08 — 次の問い') && !html.includes('class="case-label">CASE '), 'Case labels are presented in Japanese'],
-  [!html.includes('完全に統一・網羅したリストは存在しない') && html.includes('和名そのものに学名のような命名規約や拘束力はない'), 'Name-list wording avoids an unsupported nonexistence claim'],
+  [
+    html.includes('学名には、国際的に共有される命名規約（ICN）がある') &&
+      html.includes('日本菌学会は2008年、新たな和名について') &&
+      html.includes('「学会推奨和名」</strong>の考え方と決定手順を示した') &&
+      !html.includes('「学会推奨和名」</strong>を定める手順を示している'),
+    'ICN and the 2008 recommended-Japanese-name procedure are accurately scoped'
+  ],
   [
     [...html.matchAll(/CASE (0[1-4]|0[6-8]) refs:/g)].length === 7 &&
       html.includes('CASE 01 refs: 服部（2001）') &&
