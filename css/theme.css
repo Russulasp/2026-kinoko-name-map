@@ -311,6 +311,8 @@ body { background:var(--paper); }
 .layout-references .reference-columns { height: 100%; columns: 2; column-gap: 52px; }
 .layout-references .reference-columns { column-gap: 44px; }
 .layout-references .reference-columns p { margin: 0 0 12px; padding-bottom: 9px; font-size: var(--type-bibliography); line-height: 1.38; }
+.layout-references .slide-main { display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 10px; }
+.reference-scope-note { margin: 0; padding: 10px 14px; border-left: 4px solid var(--green); background: var(--soft); font-size: var(--type-bibliography); line-height: 1.4; }
 
 /* The common accessibility floor applies after legacy component rules. */
 .reveal .slides section.slide .slide-main small,
