@@ -16,7 +16,7 @@ const assertions = [
   [html.includes('解析した日本産標本では確認されなかった') && html.includes('子実体で少ない／検出されない ≠ 生合成能力がない'), 'Tricholoma revision and ustalic acid findings are appropriately scoped'],
   [html.includes('参考文献'), 'References are present'],
   [
-    html.includes('Moncalvo & Buchanan（2008）*') &&
+    html.includes('Moncalvo & Buchanan（2008）') &&
       html.includes('Buyck et al.（2010）*') &&
       html.includes('Wu et al.（2014）*') &&
       !html.includes('Nuhn et al.（2013）*') &&
@@ -25,7 +25,14 @@ const assertions = [
     'Reference verification markers match the confirmed source scope'
   ],
   [html.includes('* 一般公開されているAbstract等で確認（全文未確認）') && html.includes('† 二次資料から確認（原典未確認）'), 'Reference verification legend explains both markers'],
-  [html.includes('<strong>2つのITS配列型</strong>') && !html.includes('<strong>2系統</strong>'), 'Ganoderma finding remains scoped to two ITS sequence types'],
+  [
+    html.includes('同論文で解析された<strong>日本産3株 → ITSで2系統</strong>') &&
+      html.includes('PKB96/303・332：clade 2 ／ PKB96/330：clade 5') &&
+      html.includes('Jargalmaa et al.（2017）') &&
+      html.includes('日本産3株を現在の特定の2種へ直接読み替えない') &&
+      !html.includes('日本産が2種') && !html.includes('日本には2種'),
+    'Ganoderma evidence distinguishes the 2008 observation from later East Asian support without asserting two Japanese species'
+  ],
   [!html.includes('class="kicker"') && !html.includes('class="eyebrow"'), 'Decorative English headings are absent'],
   [html.includes('事例 01') && html.includes('事例 08 — 次の問い') && !html.includes('class="case-label">CASE '), 'Case labels are presented in Japanese'],
   [
