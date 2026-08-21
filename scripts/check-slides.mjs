@@ -26,10 +26,14 @@ const assertions = [
   ],
   [html.includes('* 一般公開されているAbstract等で確認（全文未確認）') && html.includes('† 二次資料から確認（原典未確認）'), 'Reference verification legend explains both markers'],
   [
-    html.includes('同論文で解析された<strong>日本産3株 → ITSで2系統</strong>') &&
-      html.includes('PKB96/303・332：clade 2 ／ PKB96/330：clade 5') &&
+    html.includes('日本産<br><strong>“<em>G. australe</em> complex”</strong>') &&
+      html.includes('<strong>clade 2</strong><b>2株</b>') &&
+      html.includes('<strong>clade 5</strong><b>1株</b>') &&
+      html.includes('<strong><em>adspersum</em>側</strong>') &&
+      html.includes('<strong><em>gibbosum</em>側</strong>') &&
       html.includes('Jargalmaa et al.（2017）') &&
-      html.includes('日本産3株を現在の特定の2種へ直接読み替えない') &&
+      html.includes('Fryssouli et al.（2020）') &&
+      html.includes('種同定の確定や、日本産菌群全体の再分類を意味しない') &&
       !html.includes('日本産が2種') && !html.includes('日本には2種'),
     'Ganoderma evidence distinguishes the 2008 observation from later East Asian support without asserting two Japanese species'
   ],
