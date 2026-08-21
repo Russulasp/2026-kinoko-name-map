@@ -178,6 +178,15 @@ body { background:var(--paper); }
 .layout-taxonomy-flow .taxonomy-flow > div { padding: 28px 32px; font-size: 29px; }
 .layout-taxonomy-flow .taxonomy-flow small { font-size: var(--type-caption); }
 .layout-taxonomy-flow .lead-card, .layout-taxonomy-flow .takeaway { margin: 0; }
+.ganoderma-evidence .slide-main { gap: 13px; }
+.ganoderma-evidence .taxonomy-flow > div { padding: 19px 27px; }
+.ganoderma-evidence .lead-card { padding: 18px 30px; }
+.ganoderma-evidence .lead-card p { font-size: 29px; }
+.ganoderma-evidence .lead-card span { font-size: var(--type-caption); color: var(--muted); }
+.ganoderma-evidence .follow-up { display: grid; grid-template-columns: .78fr 2fr; align-items: center; gap: 22px; margin: 0; padding: 15px 22px; border: 1px solid var(--line); border-left: 6px solid var(--green); background: white; font-size: var(--type-caption); line-height: 1.42; }
+.ganoderma-evidence .follow-up strong { font-size: var(--type-caption); }
+.ganoderma-evidence .follow-up span { font-size: var(--type-caption); }
+.ganoderma-evidence .takeaway { padding: 14px 23px; font-size: 23px; }
 .layout-tree .slide-main { display: grid; grid-template-rows: auto auto minmax(0, 1fr); gap: 20px; }
 .layout-tree .tree-list { align-self: stretch; display: flex; flex-direction: column; justify-content: center; }
 .layout-tree .tree-list > div:first-child { padding: 20px; font-size: 25px; }
