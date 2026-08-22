@@ -287,10 +287,13 @@ body { background:var(--paper); }
 .layout-progression .evolution > span i { font-size: 52px; }
 .layout-progression .evolution small { font-size: var(--type-caption); }
 
-.layout-guidelines .slide-main { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 18px; }
+.layout-guidelines .slide-header { margin-bottom: 12px; }
+.layout-guidelines .slide-main { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 10px; }
 .layout-guidelines .guidelines { height: 100%; gap: 18px 27px; }
 .layout-guidelines .guidelines p { display: flex; align-items: center; padding: 20px 22px; font-size: 23px; }
-.layout-guidelines .guideline-summary { margin: 0; padding: 15px 22px; font-size: 22px; }
+.layout-guidelines .guideline-summary { margin: 0; padding: 8px 22px; font-size: 22px; }
+.layout-guidelines .guideline-summary p { margin: 0; line-height: 1.4; }
+.layout-guidelines .guideline-summary p + p { margin-top: 4px; padding-top: 4px; border-top: 1px solid #cbd8cd; }
 
 /*
  * Main-area strategies. Stretch remains the default for dense diagrams. Content-fit
