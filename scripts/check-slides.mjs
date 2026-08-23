@@ -12,6 +12,12 @@ const assertions = [
   [slides.length === 27 && slides.every(([, , body]) => body.includes('class="slide-header"') && body.includes('class="slide-main"') && body.includes('class="slide-meta')), 'Every slide uses the header/main/meta structure'],
   [slides.every(([, classes]) => /\blayout-[\w-]+\b/.test(classes)), 'Every slide has a layout primitive'],
   [html.includes('Amanita satotamagotake') && html.includes('Lactifluus'), 'Key manuscript examples are present'],
+  [
+    html.includes('種山（2026）の整理では、地上生のイグチは85属') &&
+      html.includes('Tremble et al.（2024）：69属（62％）が5種以下') &&
+      !html.includes('69属中') && !html.includes('85属のうち'),
+    'Boletaceae genus counts retain their distinct source scopes'
+  ],
   [html.includes('白水ほか（2018）の解析では') && html.includes('species complex') && html.includes('少なくとも一部の日本産では') && html.includes('適用が<strong>暫定的'), 'Auricularia findings and later uncertainty are appropriately scoped'],
   [html.includes('解析した日本産標本では確認されなかった') && html.includes('子実体で少ない／検出されない ≠ 生合成能力がない'), 'Tricholoma revision and ustalic acid findings are appropriately scoped'],
   [html.includes('参考文献'), 'References are present'],
@@ -54,6 +60,7 @@ const assertions = [
   ],
   [titleSlide.includes('きのこの') && titleSlide.includes('2026年9月') && titleSlide.includes('渡邉 大輔') && !titleSlide.includes('subtitle'), 'Title slide contains only the requested presentation details'],
   [css.includes('aspect-ratio') || css.includes('1600'), '16:9 presentation styling is present'],
+  [css.includes('grid-template-columns: repeat(2, minmax(0, 1fr))'), 'Lactarius flow uses a readable two-column layout'],
   [css.includes('grid-template-rows: auto minmax(0, 1fr) auto') && css.includes('--type-slide-title') && css.includes('--type-reference'), 'Fixed-canvas layout and typography tokens are present'],
   [![...css.matchAll(/font-size:\s*(\d+)px/g)].some(([, size]) => Number(size) < 17), 'No fixed font size is smaller than 17px'],
   [js.includes('Reveal.initialize') && js.includes('width: 1600') && js.includes('height: 900'), 'Reveal initializes at 16:9']
