@@ -587,3 +587,47 @@ body { background:var(--paper); }
 .guideline-summary.takeaway { background:var(--ink); color:white; }
 .guideline-summary.takeaway strong { color:var(--lime); }
 .guideline-summary.takeaway p + p { border-top-color:#50645b; }
+
+/* Final visual-polish pass: natural card heights and explicit information hierarchy. */
+.name-branches {
+  display: block;
+  width: 68%;
+  height: 42px;
+  margin: 0 auto;
+  overflow: visible;
+  border: 0;
+}
+.name-branches path { fill: none; stroke: var(--green); stroke-width: 3; vector-effect: non-scaling-stroke; }
+.name-branches::before, .name-branches span { display: none; }
+.taxon-hub { min-width: 150px; padding: 9px 26px; border: 2px solid var(--green); border-radius: 999px; background: var(--soft); }
+.taxon-hub strong { font-size: 24px; }
+
+.layout-tree .branch-label { min-height: 62px; margin: 8px auto 17px; }
+.layout-tree .branch-label span { left: calc(100% + 34px); top: 10px; width: 275px; color: var(--muted); font-size: 18px; }
+.layout-tree .children { margin-top: 23px; }
+.layout-tree .children::before { top: -20px; }
+.layout-tree .children p::before { top: -20px; height: 20px; }
+
+.boletellus-followup .slide-main { grid-template-rows: auto auto auto; align-content: center; gap: 20px; }
+.boletellus-followup .followup-cards { align-items: stretch; }
+.boletellus-followup .followup-cards article { min-height: 0; height: 250px; justify-content: flex-start; padding: 18px; }
+.boletellus-followup .followup-cards h3 { margin: 0; }
+.boletellus-followup .followup-cards i { margin: 12px 0; }
+.boletellus-followup .case-summary { margin: 0; }
+
+.layout-timeline .slide-main { grid-template-rows: auto auto; align-content: center; gap: 46px; }
+.layout-timeline .japan-example { width: 76%; margin: 0; padding: 13px 25px; }
+.layout-timeline .japan-example p { margin-bottom: 0; }
+
+.chemistry-results, .culture-result { display: block; color: var(--ink); }
+.chemistry-results { margin-top: 8px; font-size: 22px; font-weight: 600; line-height: 1.5; }
+.culture-result { margin: 12px 0 5px; padding-top: 10px; border-top: 1px solid #c6d3c8; font-size: 21px; line-height: 1.45; }
+.chemistry .research-link > p small { color: var(--muted); }
+
+.analogy-intro { margin: 0 0 2px; color: var(--muted); font-size: 20px; }
+.analogy .slide-main { gap: 13px; }
+
+.boletaceae-review .slide-main { align-content: center; gap: 19px; }
+.boletaceae-review .central-question { margin: 0 auto; width: 82%; padding: 22px 34px; border: 2px solid #b9cdbd; border-left: 9px solid var(--green); border-radius: 7px; background: var(--soft); font-size: 31px; line-height: 1.42; }
+.boletaceae-review .central-question strong { font-size: 35px; }
+.boletaceae-review .takeaway { margin: 0; padding: 16px 24px; }
