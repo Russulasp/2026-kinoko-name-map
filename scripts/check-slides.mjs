@@ -57,7 +57,7 @@ const assertions = [
       html.includes('CASE 08 refs: Nuhn et al.（2013）'),
     'Multi-slide case references are consolidated on case-ending slides'
   ],
-  [titleSlide.includes('きのこの') && titleSlide.includes('2026年9月') && titleSlide.includes('渡邉 大輔') && !titleSlide.includes('subtitle'), 'Title slide contains only the requested presentation details'],
+  [titleSlide.includes('きのこの') && titleSlide.includes('2026年8月') && titleSlide.includes('渡邉 大輔') && !titleSlide.includes('subtitle'), 'Title slide contains only the requested presentation details'],
   [css.includes('aspect-ratio') || css.includes('1600'), '16:9 presentation styling is present'],
   [css.includes('grid-template-columns: repeat(2, minmax(0, 1fr))'), 'Lactarius flow uses a readable two-column layout'],
   [css.includes('grid-template-rows: auto minmax(0, 1fr) auto') && css.includes('--type-slide-title') && css.includes('--type-reference'), 'Fixed-canvas layout and typography tokens are present'],
