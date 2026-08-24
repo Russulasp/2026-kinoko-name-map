@@ -14,11 +14,11 @@ const assertions = [
   [html.includes('Amanita satotamagotake') && html.includes('Lactifluus'), 'Key manuscript examples are present'],
   [
     html.includes('種山（2026）の整理では、地上生のイグチは85属') &&
-      html.includes('Tremble et al.（2024）：69属（62％）が5種以下') &&
+      html.includes('69属（62%）が既知種5種以下') &&
       !html.includes('69属中') && !html.includes('85属のうち'),
     'Boletaceae genus counts retain their distinct source scopes'
   ],
-  [html.includes('白水ほか（2018）の解析では') && html.includes('species complex') && html.includes('少なくとも一部の日本産では') && html.includes('適用が<strong>暫定的'), 'Auricularia findings and later uncertainty are appropriately scoped'],
+  [html.includes('白水ほか（2018）の解析では') && html.includes('species complex') && html.includes('日本での扱いの一例') && html.includes('便宜的に <em>A. cornea</em> を採用'), 'Auricularia findings and later uncertainty are appropriately scoped'],
   [html.includes('解析した日本産標本では確認されなかった') && html.includes('子実体で少ない／検出されない ≠ 生合成能力がない'), 'Tricholoma revision and ustalic acid findings are appropriately scoped'],
   [html.includes('参考文献'), 'References are present'],
   [
@@ -39,17 +39,16 @@ const assertions = [
       html.includes('<strong><em>gibbosum</em>側</strong>') &&
       html.includes('Jargalmaa et al.（2017）') &&
       html.includes('Fryssouli et al.（2020）') &&
-      html.includes('種同定の確定や、日本産菌群全体の再分類を意味しない') &&
+      html.includes('日本産3株についての結果であり、日本産菌群全体を網羅したものではない') &&
       !html.includes('日本産が2種') && !html.includes('日本には2種'),
     'Ganoderma evidence distinguishes the 2008 observation from later East Asian support without asserting two Japanese species'
   ],
   [!html.includes('class="kicker"') && !html.includes('class="eyebrow"'), 'Decorative English headings are absent'],
   [html.includes('事例 01') && html.includes('事例 08 — 次の問い') && !html.includes('class="case-label">CASE '), 'Case labels are presented in Japanese'],
   [
-    html.includes('学名には、国際的に共有される命名規約（ICN）がある') &&
-      html.includes('日本菌学会は2008年、新たな和名について') &&
-      html.includes('「学会推奨和名」</strong>の考え方と決定手順を示した') &&
-      !html.includes('「学会推奨和名」</strong>を定める手順を示している'),
+    html.includes('和名には、学名のような国際的な命名規約はない') &&
+      html.includes('「学会推奨和名」</strong>の考え方と決定手順を示している') &&
+      !html.includes('2008年、新たな和名について'),
     'ICN and the 2008 recommended-Japanese-name procedure are accurately scoped'
   ],
   [
