@@ -19,7 +19,7 @@ const assertions = [
     'Boletaceae genus counts retain their distinct source scopes'
   ],
   [html.includes('白水ほか（2018）の解析では') && html.includes('species complex') && html.includes('日本での扱いの一例') && html.includes('便宜的に <em>A. cornea</em> を採用'), 'Auricularia findings and later uncertainty are appropriately scoped'],
-  [html.includes('解析した日本産標本では確認されなかった') && html.includes('子実体で少ない／検出されない ≠ 生合成能力がない'), 'Tricholoma revision and ustalic acid findings are appropriately scoped'],
+  [html.includes('解析した日本産標本では確認されなかった') && html.includes('子実体で少ない／検出されない ≠ その種に生合成能力がない'), 'Tricholoma revision and ustalic acid findings are appropriately scoped'],
   [html.includes('参考文献'), 'References are present'],
   [
     html.includes('Moncalvo & Buchanan（2008）') &&

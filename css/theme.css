@@ -530,3 +530,60 @@ body { background:var(--paper); }
 .backbone-flow{display:grid;grid-template-columns:1fr 55px 1fr;align-items:stretch}.backbone-flow article{padding:22px 28px;border:1px solid var(--line);border-top:5px solid var(--green);background:white}.backbone-flow>i{align-self:center;color:var(--green);text-align:center}.backbone-flow b{font-size:25px}.backbone-flow p{font-size:21px}.backbone-flow strong{display:block;font-size:23px}.backbone-flow small{display:block;color:var(--muted)}.central-question{margin:18px 0;padding:12px;background:var(--soft);text-align:center;font-size:27px}.boletaceae-review .takeaway{margin:0;font-size:22px}
 .dna-bars{display:flex!important;min-height:55px;align-items:center;justify-content:center;color:var(--green);font-family:monospace;font-size:27px!important;line-height:.45!important}.dna-bars.many{font-size:39px!important}.evolution small{display:block}
 .name-response .slide-main{gap:13px}.name-response .response-grid{min-height:0;height:auto}.name-response .response-grid article{padding:17px 28px}.name-response .response-grid h3{font-size:25px}.example-flow{margin:8px 0!important;text-align:center;line-height:1.3!important}.speaker-conclusion{padding:14px 26px;border-radius:7px;background:var(--ink);color:white;text-align:center}.speaker-conclusion small{color:var(--lime);font-weight:700}.speaker-conclusion p{margin:4px 0;font-size:20px;line-height:1.4}.speaker-conclusion strong{color:var(--lime);font-size:21px}
+
+/* 2026 narrative and layout revision */
+.motivation { margin-bottom: 28px; text-align:center; }
+.motivation p { margin: 5px 0; font-size: 27px; }
+.motivation b { display:block; margin-top:13px; color:var(--green); font-size:24px; }
+.taxon-hub { display:flex; width:max-content; margin:0 auto; flex-direction:column; align-items:center; color:var(--green); }
+.taxon-hub i { font-size:38px; }
+.taxon-hub strong { font-size:21px; }
+.taxon-hub small { color:var(--muted); font-size:17px!important; }
+.name-branches { height:30px; }
+.name-system .classification { padding:16px 27px; }
+.name-pair article { min-height:135px; padding:16px 27px; }
+
+/* Use CSS borders rather than glyph fragments for a dependable one-to-two split. */
+.ganoderma-split .split-connector { position:relative; height:92px; align-self:center; }
+.ganoderma-split .split-connector::before { content:""; position:absolute; left:0; top:50%; width:100%; border-top:3px solid var(--green); }
+.ganoderma-split .split-connector::after { content:""; position:absolute; right:0; top:24%; height:52%; border-right:3px solid var(--green); }
+.ganoderma-split .split-connector span { display:none; }
+
+.layout-tree .branch-label { position:relative; min-height:53px; margin:7px auto 13px; }
+.layout-tree .branch-label span { position:absolute; left:calc(100% + 24px); top:8px; width:250px; text-align:left; }
+.layout-tree .branch-label i { font-size:40px; }
+.layout-tree .children::before, .layout-tree .children p::before { border-width:3px; }
+
+.followup-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:25px; }
+.followup-cards article { display:flex; min-height:290px; flex-direction:column; align-items:center; padding:22px 18px; border:1px solid var(--line); border-top:5px solid var(--green); background:white; text-align:center; }
+.followup-cards h3 { color:var(--green); font-size:24px; }
+.followup-cards > article > em { margin-top:10px; font-size:22px; }
+.followup-cards small { color:var(--muted); }
+.followup-cards i { margin:16px 0; color:var(--green); }
+.followup-cards p { margin:0; font-size:19px; }
+
+.auricularia-grid { height:auto; align-items:start; }
+.auricularia-grid > article { min-height:365px; }
+.layout-timeline .cornea-research { align-self:center; }
+.layout-timeline .japan-example { justify-self:center; width:78%; margin-top:4px; padding:13px 25px; }
+.layout-timeline .japan-example h3 { margin:3px 0; }
+.tamago-ecology .slide-main { gap:25px; }
+.tamago-ecology .habitat-compare { margin:0; }
+.tamago-ecology .overlap-note { margin:0 auto; }
+
+.chemistry .research-link > p { background:var(--soft); color:var(--ink); }
+.chemistry .research-link > p strong, .chemistry .research-link > p b { color:var(--green); }
+
+.layout-lactarius-flow .slide-main { display:grid; grid-template-rows:auto 1fr auto; gap:13px; }
+.type-species-lead { margin:0; padding:10px 20px; border-left:6px solid var(--green); background:var(--soft); text-align:center; font-size:23px; }
+.lactarius-flow { gap:13px 45px; }
+.lactarius-flow li { min-height:104px; padding:33px 20px 15px; font-size:19px; }
+.lactarius-flow li:last-child { grid-column:1 / -1; min-height:84px; justify-content:flex-start; padding:33px 20px 15px; border:1px solid var(--line); border-top:5px solid var(--green); background:white; color:var(--ink); text-align:left; font-size:19px; }
+.lactarius-flow li:last-child::before { top:10px; transform:none; color:var(--green); }
+.lactarius-flow li:nth-child(4)::after { content:"\f078"; right:50%; bottom:-22px; transform:translate(50%, 50%); }
+.lactarius-result { display:grid; grid-template-columns:1fr 1.4fr; gap:15px; padding:14px 22px; border-radius:6px; background:var(--ink); color:white; text-align:center; font-size:21px; }
+.lactarius-result em { color:var(--lime); }
+.taxonomy-reason.two-step { grid-template-columns:1fr 60px 1fr; max-width:1080px; margin:0 auto; }
+.guideline-summary.takeaway { background:var(--ink); color:white; }
+.guideline-summary.takeaway strong { color:var(--lime); }
+.guideline-summary.takeaway p + p { border-top-color:#50645b; }
