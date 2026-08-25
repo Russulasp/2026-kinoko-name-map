@@ -395,6 +395,7 @@ body { background:var(--paper); }
 .name-branches span:first-child { left: 0; }
 .name-branches span:last-child { right: 0; }
 .name-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+.name-pair article:first-child p em { font-style:italic; }
 .name-pair article { min-height: 150px; }
 .relationship-note {
   margin: 22px 0 0;
