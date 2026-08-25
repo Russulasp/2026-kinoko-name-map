@@ -46,13 +46,28 @@ const assertions = [
   [!html.includes('class="kicker"') && !html.includes('class="eyebrow"'), 'Decorative English headings are absent'],
   [html.includes('事例 01') && html.includes('事例 08 — 次の問い') && !html.includes('class="case-label">CASE '), 'Case labels are presented in Japanese'],
   [
-    html.includes('和名には、学名のような国際的な命名規約はない') &&
-      html.includes('「学会推奨和名」</strong>の考え方と決定手順を示している') &&
+    html.includes('和名には、ICNに相当する命名規約はない') &&
+      html.includes('日本菌学会は「学会推奨和名」の考え方と決定手順を示している') &&
       !html.includes('2008年、新たな和名について'),
     'ICN and the 2008 recommended-Japanese-name procedure are accurately scoped'
   ],
   [
-    [...html.matchAll(/CASE (0[1-4]|0[6-8]) refs:/g)].length === 7 &&
+    html.includes('和名や学名を整理したリスト・目録は<strong>複数ある</strong>') &&
+      html.includes('命名規約の有無') &&
+      html.includes('幸徳伸也（2026）日本産きのこ目録2026．') &&
+      !html.includes('単一の統一リスト') &&
+      !html.includes('唯一の統一リスト'),
+    'Naming rules are distinguished from the multiple lists and catalogues that organize names'
+  ],
+  [
+    html.includes('トラシマチチタケ</dt><dd><em>Multifurca</em> sp.') &&
+      html.includes('ウズゲツチイロタケ</dt><dd><em>Multifurca ochricompacta</em>') &&
+      html.includes('CASE 07 refs: Buyck et al.（2008）；幸徳（2026）') &&
+      !html.includes('海上の森'),
+    'Japanese Multifurca examples and their separate taxonomic/catalogue sources are explicit'
+  ],
+  [
+    [...html.matchAll(/CASE (0[1-4]|0[6-8]) refs:/g)].length === 8 &&
       html.includes('CASE 01 refs: 服部（2001）') &&
       html.includes('CASE 08 refs: Nuhn et al.（2013）'),
     'Multi-slide case references are consolidated on case-ending slides'
