@@ -14,11 +14,20 @@ const assertions = [
   [html.includes('Amanita satotamagotake') && html.includes('Lactifluus'), 'Key manuscript examples are present'],
   [
     html.includes('トラシマチチタケ：<em>Multifurca</em> sp.') &&
-      html.includes('海上の森資料：<em>Multifurca</em> sp.（未確定表記）') &&
+      html.includes('ウズゲツチイロタケ：<em>Multifurca ochricompacta</em>') &&
+      !html.includes('海上の森') &&
       !html.includes('<em>Multifurca sp.</em>') &&
       !css.includes('content:"\\A 海上の森資料：Multifurca sp.'),
     'Multifurca is italicized without italicizing sp. in visible and annotated text'
   ],
+  [
+    html.includes('<div class="taxon-hub"><strong>分類された生物のまとまり</strong></div>') &&
+      html.includes('分類群につけられる学術上の名前') &&
+      html.includes('学名・和名と分類群との対応関係を整理する必要が生じる'),
+    'The central plain-language label and the two technical uses of 分類群 are distinct'
+  ],
+  [html.includes('同じ名前で扱われていた日本産の3株が、<strong>異なる系統に分かれた</strong>'), 'The Ganoderma takeaway explicitly describes the three Japanese strains'],
+  [html.includes('チチタケの仲間 — 旧 <em>Lactarius</em> の再編'), 'The Lactarius reorganization slide title italicizes the genus name'],
   [
     html.includes('<em>Lactarius</em>（広義）') &&
       html.includes('<em>Lactarius</em> <span>（狭義）</span>') &&
