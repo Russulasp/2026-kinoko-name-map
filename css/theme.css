@@ -547,7 +547,25 @@ body { background:var(--paper); }
 .ganoderma-split .split-connector { position:relative; height:92px; align-self:center; }
 .ganoderma-split .split-connector::before { content:""; position:absolute; left:0; top:50%; width:100%; border-top:3px solid var(--green); }
 .ganoderma-split .split-connector::after { content:""; position:absolute; right:0; top:24%; height:52%; border-right:3px solid var(--green); }
-.ganoderma-split .split-connector span { display:none; }
+.ganoderma-split .split-connector span { display:block; }
+
+.common-name-points { margin: 15px 0 24px; }
+.common-name-points li { margin-bottom: 18px; }
+.common-name-points small { display: block; margin-top: 5px; color: var(--muted); font-size: 19px; }
+
+/* A fixed one-to-three diagram: the SVG owns every branch, avoiding detached glyph arrows. */
+.lactarius-revision .slide-main { display: flex; flex-direction: column; justify-content: center; gap: 0; }
+.lactarius-origin { align-self: center; width: 42%; padding: 15px 25px; border: 2px solid var(--green); border-radius: 8px; background: white; text-align: center; font-size: 29px; }
+.lactarius-branch { position: relative; width: 100%; height: 82px; }
+.lactarius-branch span { position: absolute; z-index: 1; top: 8px; left: 50%; padding: 2px 13px; transform: translateX(-50%); background: var(--paper); color: var(--green); font-size: 18px; font-weight: 700; }
+.lactarius-branch svg { display: block; width: 100%; height: 70px; margin-top: 12px; overflow: visible; }
+.lactarius-branch path { fill: none; stroke: var(--green); stroke-width: 3; vector-effect: non-scaling-stroke; }
+.lactarius-revision .genus-grid { margin: 0; }
+.lactarius-revision .genus-grid article { min-height: 260px; padding: 17px 20px; }
+.lactarius-revision .genus-grid h3 { margin-bottom: 8px; }
+.lactarius-revision .genus-grid p { margin: 6px 0; }
+.lactarius-revision .genus-grid small { line-height: 1.45; }
+.lactarius-revision .note { margin: 10px 0 0; }
 
 .layout-tree .branch-label { position:relative; min-height:53px; margin:7px auto 13px; }
 .layout-tree .branch-label span { position:absolute; left:calc(100% + 24px); top:8px; width:250px; text-align:left; }
