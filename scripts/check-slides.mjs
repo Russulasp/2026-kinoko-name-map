@@ -13,6 +13,20 @@ const assertions = [
   [slides.every(([, classes]) => /\blayout-[\w-]+\b/.test(classes)), 'Every slide has a layout primitive'],
   [html.includes('Amanita satotamagotake') && html.includes('Lactifluus'), 'Key manuscript examples are present'],
   [
+    html.includes('トラシマチチタケ：<em>Multifurca</em> sp.') &&
+      html.includes('海上の森資料：<em>Multifurca</em> sp.（未確定表記）') &&
+      !html.includes('<em>Multifurca sp.</em>') &&
+      !css.includes('content:"\\A 海上の森資料：Multifurca sp.'),
+    'Multifurca is italicized without italicizing sp. in visible and annotated text'
+  ],
+  [
+    html.includes('<em>Lactarius</em>（広義）') &&
+      html.includes('<em>Lactarius</em> <span>（狭義）</span>') &&
+      !html.includes('<em>Lactarius（広義）</em>') &&
+      !html.includes('<em>Lactarius（狭義）</em>'),
+    'Broad- and strict-sense qualifiers remain roman outside genus emphasis'
+  ],
+  [
     html.includes('種山（2026）の整理では、地上生のイグチは85属') &&
       html.includes('69属（62%）が既知種5種以下') &&
       !html.includes('69属中') && !html.includes('85属のうち'),
