@@ -194,12 +194,17 @@ body { background:var(--paper); }
 .clade-pair b { color: var(--ink); font-size: 22px; }
 .lineage-pair article { background: var(--soft); border-color: #cbd8cd; }
 .lineage-pair strong { font-size: 27px; }
-.split-connector { position: relative; }
-.split-connector::before { content: ""; position: absolute; left: 0; right: 50%; top: 50%; border-top: 2px solid var(--green); }
-.split-connector::after { content: ""; position: absolute; right: 0; top: 25%; bottom: 25%; width: 50%; border: 2px solid var(--green); border-left: 0; }
-.split-connector span::before, .split-connector span::after { content: ""; position: absolute; right: -5px; width: 0; height: 0; border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-left: 8px solid var(--green); }
-.split-connector span::before { top: calc(25% - 5px); }
-.split-connector span::after { bottom: calc(25% - 5px); }
+.ganoderma-split .split-connector { position: relative; align-self: stretch; --connector-gap: 10px; --clade-center-offset: 3.5px; }
+.ganoderma-split .split-connector::before,
+.ganoderma-split .split-connector::after,
+.ganoderma-split .split-connector span::before,
+.ganoderma-split .split-connector span::after { content: ""; position: absolute; border-color: var(--green); }
+.ganoderma-split .split-connector::before { left: calc(-1 * var(--connector-gap)); right: 50%; top: 50%; border-top: 2px solid var(--green); }
+.ganoderma-split .split-connector::after { left: 50%; top: calc(25% - var(--clade-center-offset)); bottom: calc(25% - var(--clade-center-offset)); border-left: 2px solid var(--green); }
+.ganoderma-split .split-connector span::before,
+.ganoderma-split .split-connector span::after { left: 50%; right: calc(-1 * var(--connector-gap)); border-top: 2px solid var(--green); }
+.ganoderma-split .split-connector span::before { top: calc(25% - var(--clade-center-offset)); }
+.ganoderma-split .split-connector span::after { bottom: calc(25% - var(--clade-center-offset)); }
 .mapping-arrows i { align-self: center; color: var(--green); font-size: 27px; text-align: center; }
 .ganoderma-caution { display: flex; align-items: center; gap: 16px; margin: 0; padding: 10px 18px; border-left: 5px solid var(--lime); background: white; color: var(--muted); font-size: 19px; line-height: 1.4 !important; }
 .ganoderma-caution i { color: var(--green); font-size: 24px; }
@@ -542,12 +547,6 @@ body { background:var(--paper); }
 .name-branches { height:30px; }
 .name-system .classification { padding:16px 27px; }
 .name-pair article { min-height:135px; padding:16px 27px; }
-
-/* Use CSS borders rather than glyph fragments for a dependable one-to-two split. */
-.ganoderma-split .split-connector { position:relative; height:92px; align-self:center; }
-.ganoderma-split .split-connector::before { content:""; position:absolute; left:0; top:50%; width:100%; border-top:3px solid var(--green); }
-.ganoderma-split .split-connector::after { content:""; position:absolute; right:0; top:24%; height:52%; border-right:3px solid var(--green); }
-.ganoderma-split .split-connector span { display:block; }
 
 .common-name-points { margin: 15px 0 24px; }
 .common-name-points li { margin-bottom: 18px; }
