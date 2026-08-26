@@ -17,7 +17,7 @@ body { background:var(--paper); }
 .reveal ul { margin:0 0 0 1.1em; }
 .reveal li { margin:.35em 0; }
 .reveal strong { color:var(--green); }
-.reveal em { font-family:Georgia,serif; }
+.reveal em { font-family:Georgia,serif; font-style:italic; }
 .case-label { display:inline-block; color:var(--muted); font-size:var(--type-caption); font-weight:600; letter-spacing:.08em; margin-bottom:14px; }
 .refs { position:absolute; left:112px; right:120px; bottom:29px; color:#71807a; font-size:var(--type-caption); line-height:1.35; }
 .lead-card { display:flex; align-items:center; gap:30px; background:var(--soft); border-left:7px solid var(--green); padding:24px 34px; margin:18px 0 28px; }
@@ -395,7 +395,6 @@ body { background:var(--paper); }
 .name-branches span:first-child { left: 0; }
 .name-branches span:last-child { right: 0; }
 .name-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
-.name-pair article:first-child p em { font-style:italic; }
 .name-pair article { min-height: 150px; }
 .relationship-note {
   margin: 22px 0 0;
