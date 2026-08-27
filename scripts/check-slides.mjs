@@ -36,7 +36,7 @@ const assertions = [
     'Broad- and strict-sense qualifiers remain roman outside genus emphasis'
   ],
   [
-    html.includes('種山（2026）の整理では、地上生のイグチは85属') &&
+    html.includes('種山（2026）による整理') &&
       html.includes('69属（62%）が既知種5種以下') &&
       !html.includes('69属中') && !html.includes('85属のうち'),
     'Boletaceae genus counts retain their distinct source scopes'
